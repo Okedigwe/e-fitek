@@ -69,27 +69,35 @@ section {
     text-align: center;
 }
 
-/* Hero Section */
+
+
+
+/* Add this to your styles.css file */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the image cover the entire space without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* This places the image behind the text */
+}
+
 #hero {
-    background: url('placeholder-image.jpg') no-repeat center center/cover;
-    color: #fff;
+    /* Remove the old background-image and background-color lines */
+    position: relative;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    overflow: hidden; /* This hides any part of the image that overflows the container */
 }
 
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+/* Also, remove the old #hero::before rule, as it's no longer needed for the dark overlay */
+
+
+
 
 .hero-content {
     position: relative;
