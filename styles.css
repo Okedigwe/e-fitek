@@ -199,3 +199,56 @@ footer {
     display: block;
     margin-top: 40px;
 }
+
+
+/* Media Query for screens smaller than 768px (common for tablets and phones) */
+@media (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Make the hero section text a bit smaller */
+    #hero {
+        height: 50vh;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Stack the service cards vertically */
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust padding for main content sections */
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    /* Make the logo fit better on smaller screens */
+    .logo-img {
+        height: 30px; 
+    }
+}
