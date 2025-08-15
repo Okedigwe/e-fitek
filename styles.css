@@ -264,14 +264,14 @@ footer {
     nav ul {
         flex-direction:row;
         margin-top: 5px; /* Adds space below the logo */
-        width: 50%;
+        width: 100%;
     }
 
     /* Individual navigation links */
     nav ul li {
         margin: 5px 0; /* Adds vertical space between links */
-        width: 50%;
-        text-align:start;
+        width: 100%;
+        text-align:right;
     }
 
     /* Header padding */
@@ -283,4 +283,25 @@ footer {
     .logo-img {
         height: 35px;
     }
+}
+
+@media (max-width: 768px) {
+    /* ... other mobile styles ... */
+    
+    /* Adjust the hero section's height and overflow for mobile */
+    #hero {
+        height: 40vh; /* Adjust height to fit a mobile screen better */
+        overflow: hidden; /* Ensures no content spills out */
+    }
+
+    /* Ensure the hero image covers the entire section */
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* You can add object-position to control the focal point of the image on mobile */
+        object-position: center center;
+    }
+    
+    /* ... other mobile styles ... */
 }
