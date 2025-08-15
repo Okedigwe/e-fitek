@@ -26,6 +26,42 @@ body {
     box-sizing: content-box;
 }
 
+
+
+/* Style for the main navigation */
+nav ul li {
+    position: relative; /* This is essential for positioning the drop-down menu */
+}
+
+/* Style for the drop-down menu itself */
+.dropdown-menu {
+    display: none; /* This hides the menu by default */
+    position: absolute;
+    top: 100%; /* Positions the menu directly below the main link */
+    left: 0;
+    list-style: none;
+    background-color: #333;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Style for the links inside the drop-down menu */
+.dropdown-menu li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Show the drop-down menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

@@ -73,3 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownToggle = document.querySelector('.dropdown > a');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevents the link from navigating
+        dropdownMenu.classList.toggle('show');
+    });
+});
