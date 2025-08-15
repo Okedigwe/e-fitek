@@ -359,3 +359,9 @@ footer {
         object-fit: cover;
     }
 }
+
+/* Add this rule to your styles.css, outside any media queries */
+img {
+    max-width: 100%;
+    height: auto;
+}
