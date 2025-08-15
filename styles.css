@@ -257,7 +257,7 @@ footer {
     /* Main navigation container */
     nav {
         flex-direction:row;
-        align-items:flex-start;
+        align-items:center;
     }
 
     /* List of navigation links */
@@ -276,7 +276,7 @@ footer {
 
     /* Header padding */
     header {
-        padding: 0rem;
+        padding: 0.5rem;
     }
 
     /* Logo size */
@@ -300,7 +300,7 @@ footer {
         height: 100%;
         object-fit:cover;
         /* You can add object-position to control the focal point of the image on mobile */
-        object-position:center;
+        object-position:center center;
     }
     
     /* ... other mobile styles ... */
@@ -317,7 +317,7 @@ footer {
     }
     
     main {
-        flex:auto; /* This makes the main content area expand to fill all available space */
+        flex: 1; /* This makes the main content area expand to fill all available space */
     }
     
     /* ... other mobile styles ... */
