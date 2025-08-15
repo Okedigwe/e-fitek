@@ -391,3 +391,19 @@ img {
 #backToTopBtn:hover {
     background-color: #0056b3;
 }
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Higher z-index for the chatbot */
+    /* ... other styles ... */
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Lower z-index for the back-to-top button */
+    /* ... other styles ... */
+}
