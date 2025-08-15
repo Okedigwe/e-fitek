@@ -257,14 +257,14 @@ footer {
     /* Main navigation container */
     nav {
         flex-direction:row;
-        align-items:flex-end;
+        align-items:flex-start;
     }
 
     /* List of navigation links */
     nav ul {
         flex-direction:row;
         margin-top: 5px; /* Adds space below the logo */
-        width: 35%;
+        width: 50%;
     }
 
     /* Individual navigation links */
