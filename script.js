@@ -9,7 +9,6 @@ console.log('Website is ready!');
 //     alert('You clicked the CTA button!');
 // });
 
-// Get the button
 document.addEventListener('DOMContentLoaded', () => {
     // ---- Back to Top Button Logic ----
     let mybutton = document.getElementById("backToTopBtn");
@@ -56,40 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    let faqQuestions = document.querySelectorAll('.faq-question');
-
-    faqQuestions.forEach(function(question) {
-        question.addEventListener('click', function() {
-            let answer = this.nextElementSibling;
-            
-            // Check if the answer is currently visible
-            if (answer.style.maxHeight) {
-                // If it is, collapse it
-                answer.style.maxHeight = null;
-            } else {
-                // If not, expand it
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
-        });
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    let form = document.getElementById('contactForm');
-
-    form.addEventListener('submit', function(event) {
-        let name = document.getElementById('name');
-        let email = document.getElementById('email');
-        let message = document.getElementById('message');
-
-        // Check if all fields are filled
-        if (name.value === '' || email.value === '' || message.value === '') {
-            alert('Please fill in all fields before sending your message.');
-            event.preventDefault(); // Stop the form from submitting
-        }
-    });
 });
