@@ -351,3 +351,11 @@ footer {
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100%;
+        height: auto; /* Change from height: 100% */
+        object-fit: cover;
+    }
+}
