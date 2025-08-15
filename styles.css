@@ -270,7 +270,7 @@ footer {
     /* Individual navigation links */
     nav ul li {
         margin: 5px 0; /* Adds vertical space between links */
-        width: 100%;
+        width: 50%;
         text-align:left;
     }
 
