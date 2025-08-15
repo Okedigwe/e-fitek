@@ -252,3 +252,35 @@ footer {
         height: 30px; 
     }
 }
+
+@media (max-width: 768px) {
+    /* Main navigation container */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* List of navigation links */
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px; /* Adds space below the logo */
+        width: 100%;
+    }
+
+    /* Individual navigation links */
+    nav ul li {
+        margin: 10px 0; /* Adds vertical space between links */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Header padding */
+    header {
+        padding: 1rem;
+    }
+
+    /* Logo size */
+    .logo-img {
+        height: 35px;
+    }
+}
