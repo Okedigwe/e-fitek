@@ -290,7 +290,7 @@ footer {
     
     /* Adjust the hero section's height and overflow for mobile */
     #hero {
-        height: 40vh; /* Adjust height to fit a mobile screen better */
+        height: 50vh; /* Adjust height to fit a mobile screen better */
         overflow: hidden; /* Ensures no content spills out */
     }
 
@@ -300,7 +300,7 @@ footer {
         height: 100%;
         object-fit:fill;
         /* You can add object-position to control the focal point of the image on mobile */
-        object-position: center center;
+        object-position:center;
     }
     
     /* ... other mobile styles ... */
