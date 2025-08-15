@@ -271,12 +271,12 @@ footer {
     nav ul li {
         margin: 5px 0; /* Adds vertical space between links */
         width: 50%;
-        text-align:justify;
+        text-align:start;
     }
 
     /* Header padding */
     header {
-        padding: 0.2rem;
+        padding: 0rem;
     }
 
     /* Logo size */
