@@ -322,3 +322,11 @@ footer {
     
     /* ... other mobile styles ... */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
