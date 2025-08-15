@@ -365,3 +365,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Example for a container with an overflowing image */
+.image-container {
+    width: 100%;
+    padding: 0 1rem; /* Adjusts padding to prevent horizontal scroll */
+}
