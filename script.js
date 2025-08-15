@@ -56,3 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+        let name = document.getElementById('name');
+        let email = document.getElementById('email');
+        let message = document.getElementById('message');
+
+        // Check if all fields are filled
+        if (name.value === '' || email.value === '' || message.value === '') {
+            alert('Please fill in all fields before sending your message.');
+            event.preventDefault(); // Stop the form from submitting
+        }
+    });
+});
