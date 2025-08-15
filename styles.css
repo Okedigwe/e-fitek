@@ -374,30 +374,31 @@ img {
 
 
 #backToTopBtn {
-    display:none;
+    display: block; /* Change from none to block so it can be animated */
     position: fixed;
-    bottom: 30px;
+    bottom: 20px; /* Adjusted from 10px */
     left: 30px;
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #e70d0d;
-    color: rgb(255, 251, 0);
+    background-color: #e8f1e24c; /* Using a consistent color */
+    color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
     transition: opacity 0.3s ease-in-out;
-    opacity: 0;
+    opacity: 0; /* Still invisible initially */
+    pointer-events: none; /* Prevents clicks when invisible */
 }
 
 #backToTopBtn.show {
-    opacity: 1;
+    opacity: 1; /* Makes it visible when this class is added by JS */
+    pointer-events: auto; /* Allows clicks when visible */
 }
 
-
 #backToTopBtn:hover {
-    background-color: #0056b3;
+    background-color: #0f1113;
 }
 
 /*#chatbot-container {
