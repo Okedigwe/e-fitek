@@ -1,3 +1,15 @@
+/* Universal Box-Sizing Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Basic Reset and Global Styles */
 * {
     margin: 0;
