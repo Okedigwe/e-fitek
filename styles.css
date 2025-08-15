@@ -120,6 +120,7 @@ section {
     z-index: 1;
 }
 
+
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -143,6 +144,7 @@ section {
     background: #0056b3;
 }
 
+
 /* Featured Services */
 .service-cards {
     display: flex;
@@ -155,8 +157,9 @@ section {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
 }
+
+
 
 /* Footer Social Links */
 .social-links {
@@ -178,7 +181,7 @@ section {
 /* Updated the footer to use flexbox for better alignment */
 footer {
     background: #333;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
     display: flex;
@@ -401,7 +404,7 @@ img {
     background-color: #0f1113;
 }
 
-/*#chatbot-container {
+#chatbot-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -431,4 +434,59 @@ img {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.cta-button {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px); /* Lifts the button slightly */
+    background-color: #0056b3;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero-content {
+    /* ... existing styles ... */
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.contact-icons a {
+    color: #007BFF; /* A consistent brand color */
+    font-size: 2rem; /* Adjust size as needed */
+    margin: 0 15px; /* Add space between the icons */
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #0056b3;
 }
