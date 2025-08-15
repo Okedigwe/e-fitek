@@ -12,8 +12,19 @@ console.log('Website is ready!');
 // Get the button
 let mybutton = document.getElementById("backToTopBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 20px from the top of the document, show the button 
+// // This is the function that shows/hides the button
 window.onscroll = function() {scrollFunction()};
+
+document.addEventListener('DOMContentLoaded'), () => {
+    let mybutton = document.getElementById("backToTopBtn");
+}
+
+if (mybutton) {
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    }
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -30,7 +41,3 @@ function backToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-// This is the function that shows/hides the button
-window.onscroll = function() {scrollFunction()};
-// ...other JavaScript code...
