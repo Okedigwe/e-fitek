@@ -36,3 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            let answer = this.nextElementSibling;
+            
+            // Check if the answer is currently visible
+            if (answer.style.maxHeight) {
+                // If it is, collapse it
+                answer.style.maxHeight = null;
+            } else {
+                // If not, expand it
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+});

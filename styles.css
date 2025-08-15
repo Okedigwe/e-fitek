@@ -373,7 +373,6 @@ img {
 }
 
 
-
 #backToTopBtn {
     display: none;
     position: fixed;
@@ -407,4 +406,28 @@ img {
     right: 20px;
     z-index: 999; /* Higher z-index for the chatbot */
     /* ... other styles ... */
+}
+
+
+.faq-question {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-answer {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
