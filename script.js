@@ -30,3 +30,7 @@ function backToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// This is the function that shows/hides the button
+window.onscroll = function() {scrollFunction()};
+// ...other JavaScript code...

@@ -407,3 +407,9 @@ img {
     z-index: 99; /* Lower z-index for the back-to-top button */
     /* ... other styles ... */
 }
+
+#backToTopBtn {
+    display: none; /* This hides the button by default */
+    position: fixed;
+    /* ...other styles... */
+}
