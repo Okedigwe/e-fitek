@@ -467,17 +467,28 @@ footer {
   }
 
   /* Adjust navigation for smaller screens */
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
+    
+    nav {
+        display: flex; /* Ensure it uses flexbox */
+        justify-content: space-between; /* Pushes logo to left, icon to right */
+        align-items: center; /* Vertically centers them */
+        padding: 1rem;
+    }    
 
-  nav ul {
+    nav ul {
     flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    display: none; /* Keep the navigation hidden by default */
+        position: absolute;
+        top: 60px; /* Adjust this to sit below the header */
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #333;
   }
+}
+
 
   /* Individual navigation links */
   nav ul li {
