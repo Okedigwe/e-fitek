@@ -96,6 +96,7 @@ nav {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem;
+  height: 90px;
 }
 
 nav .logo h1 {
@@ -430,16 +431,13 @@ footer {
     margin-bottom: 0.5rem;
     top: 20%;
     left: 50%;
-
   }
   .hero-content p {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
 
-
-
-   #hero {
+  #hero {
     height: 10vh; /* Adjust height to fit a mobile screen better */
     overflow: hidden; /* Ensures no content spills out */
   }
@@ -456,7 +454,6 @@ footer {
     /*object-position: center center;*/
   }
 
-  
   @keyframes slideIn {
     to {
       transform: translateY(1);
@@ -465,92 +462,92 @@ footer {
   }
 
   /* Adjust navigation for smaller screens */
-    
-    nav {
-        display: flex; /* Ensure it uses flexbox */
-        justify-content: space-between; /* Pushes logo to left, icon to right */
-        align-items: center; /* Vertically centers them */
-        padding: 1rem;
-        height: 20px; /* Adjust this value to set a fixed height for the nav bar */
-    }    
 
-    nav ul {
+  nav {
+    display: flex; /* Ensure it uses flexbox */
+    justify-content: space-between; /* Pushes logo to left, icon to right */
+    align-items: center; /* Vertically centers them */
+    padding: 1rem;
+    height: 20px; /* Adjust this value to set a fixed height for the nav bar */
+  }
+
+  nav ul {
     flex-direction: column;
     width: 100%;
     /* margin-top: 1rem; */
     display: none; /* Keep the navigation hidden by default */
-        position: absolute;
-        top: 60px; /* Adjust this to sit below the header */
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background: #333;
+    position: absolute;
+    top: 60px; /* Adjust this to sit below the header */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #333;
   }
+
+/* Individual navigation links */
+nav ul li {
+  margin: 5px 0; /* Adds vertical space between links */
+  width: 100%;
+  text-align: right;
 }
 
+/* Stack the service cards vertically */
+.service-cards {
+  flex-direction: column;
+}
 
-  /* Individual navigation links */
-  nav ul li {
-    margin: 5px 0; /* Adds vertical space between links */
-    width: 100%;
-    text-align: right;
-  }
+.card {
+  margin-bottom: 20px;
+}
 
-  /* Stack the service cards vertically */
-  .service-cards {
-    flex-direction: column;
-  }
+/* Adjust padding for main content sections */
+section {
+  padding: 2rem 1rem;
+}
 
-  .card {
-    margin-bottom: 20px;
-  }
+/* Header padding */
+header {
+  padding: 0.1rem;
+  margin: 0;
+}
 
-  /* Adjust padding for main content sections */
-  section {
-    padding: 2rem 1rem;
-  }
+/* Logo size */
+.logo-img {
+  height: 35px;
+}
 
-  /* Header padding */
-  header {
-    padding: 0.1rem;
-    margin: 0;
-  }
+.features {
+  flex-direction: column;
+  align-items: center;
+}
 
-  /* Logo size */
-  .logo-img {
-    height: 35px;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  object-fit: cover;
+}
 
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
+main {
+  flex: 1; /* This makes the main content area expand to fill all available space */
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    object-fit: cover;
-  }
+/* Show the menu toggle button on mobile screens */
+.menu-toggle {
+  display: block;
+}
 
-  main {
-    flex: 1; /* This makes the main content area expand to fill all available space */
-  }
+/* Hide the navigation list by default on mobile */
+nav ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
 
-  /* Show the menu toggle button on mobile screens */
-  .menu-toggle {
-    display: block;
-  }
+/* Show the navigation list when the menu toggle is clicked */
+nav ul.active {
+  display: flex;
+}
 
-  /* Hide the navigation list by default on mobile */
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  /* Show the navigation list when the menu toggle is clicked */
-  nav ul.active {
-    display: flex;
-  }
+}
