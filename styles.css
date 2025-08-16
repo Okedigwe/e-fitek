@@ -423,6 +423,7 @@ footer {
 @media (max-width: 768px) {
   .hero-content {
     padding: 0 1rem;
+    transform: translate(-50%, -50%);
   }
   .hero-content h2 {
     font-size: 2rem;
