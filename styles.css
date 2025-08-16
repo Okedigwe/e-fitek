@@ -428,12 +428,15 @@ footer {
   .hero-content h2 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    top: 50%;
 
   }
   .hero-content p {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
+
+
 
    #hero {
     height: 40vh; /* Adjust height to fit a mobile screen better */
@@ -504,6 +507,7 @@ footer {
   /* Header padding */
   header {
     padding: 0.2rem;
+    margin: 0;
   }
 
   /* Logo size */
