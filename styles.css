@@ -428,7 +428,8 @@ footer {
   .hero-content h2 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    top: 30%;
+    top: 20%;
+    left: 50%;
 
   }
   .hero-content p {
