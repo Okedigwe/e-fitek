@@ -426,13 +426,16 @@ footer {
     transform: translate(-50%, -50%);
   }
   .hero-content h2 {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
   }
   .hero-content p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 
-  #hero {
+   #hero {
     height: 40vh; /* Adjust height to fit a mobile screen better */
     overflow: hidden; /* Ensures no content spills out */
   }
@@ -500,7 +503,7 @@ footer {
 
   /* Header padding */
   header {
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 
   /* Logo size */
