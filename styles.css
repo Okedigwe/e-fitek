@@ -440,7 +440,7 @@ footer {
 
 
    #hero {
-    height: 30vh; /* Adjust height to fit a mobile screen better */
+    height: 20vh; /* Adjust height to fit a mobile screen better */
     overflow: hidden; /* Ensures no content spills out */
   }
 
