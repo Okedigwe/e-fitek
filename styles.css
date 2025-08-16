@@ -57,19 +57,15 @@ img {
   display: block;
 }
 
-
-
 /* Hide the menu toggle button by default */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
 }
-
-
 
 /* ====================================
    Body, Header, nav, main, Section
@@ -328,7 +324,7 @@ footer {
   height: auto;
   display: block;
   margin-top: 40px;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 /* ====================================
@@ -425,7 +421,6 @@ footer {
    ==================================== */
 
 @media (max-width: 768px) {
-  
   .hero-content {
     padding: 0 1rem;
   }
@@ -458,7 +453,7 @@ footer {
 
   @keyframes slideIn {
     to {
-      transform: translateY(0);
+      transform: translateY(1);
       opacity: 1;
     }
   }
@@ -475,7 +470,7 @@ footer {
     width: 100%;
     margin-top: 1rem;
   }
-  
+
   /* Individual navigation links */
   nav ul li {
     margin: 5px 0; /* Adds vertical space between links */
@@ -529,20 +524,20 @@ footer {
   }
 
   /* Show the menu toggle button on mobile screens */
-.menu-toggle {
-        display: block;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    /* Hide the navigation list by default on mobile */
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-    }
+  /* Hide the navigation list by default on mobile */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
 
-    /* Show the navigation list when the menu toggle is clicked */
-    nav ul.active {
-        display: flex;
-    }
+  /* Show the navigation list when the menu toggle is clicked */
+  nav ul.active {
+    display: flex;
+  }
 }
