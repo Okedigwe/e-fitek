@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let mybutton = document.getElementById("backToTopBtn");
 
     if (mybutton) {
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.classList.add("show");
             } else {
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---- FAQ Accordion Logic ----
     let faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(function(question) {
-        question.addEventListener('click', function() {
+    faqQuestions.forEach(function (question) {
+        question.addEventListener('click', function () {
             let answer = this.nextElementSibling;
             if (answer.style.maxHeight) {
                 answer.style.maxHeight = null;
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Contact Form Validation Logic ----
     let form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', function(event) {
+        form.addEventListener('submit', function (event) {
             let name = document.getElementById('name');
             let email = document.getElementById('email');
             let message = document.getElementById('message');
@@ -83,4 +83,29 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // Prevents the link from navigating
         dropdownMenu.classList.toggle('show');
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-image');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active-slide');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active-slide');
+    }
+
+    // Change slide every 5 seconds
+    setInterval(nextSlide, 5000);
+});
+
+
+// Get the menu toggle button and the navigation list
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('nav ul');
+
+// Add a click event listener to the button
+menuToggle.addEventListener('click', () => {
+    // Toggle a class on the navigation list to show/hide it
+    navList.classList.toggle('active');
 });

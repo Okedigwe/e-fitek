@@ -6,83 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Fitek Digital Services - Digital Solutions</title>
     <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
     <header>
         <nav>
+         
         <div class="logo">
             <a href="index.html">
                 <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
             </a>
         </div>
-            
-        
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
 
-        <ul>
+                <li class="dropdown">
 
-            <li><a href="index.html">Home</a></li>
+                    <a href="services.html">Services</a>
 
-            <li class="dropdown">
+                    <ul class="dropdown-menu">
 
-                <a href="services.html">Services</a>
-
-                <ul class="dropdown-menu">
-
-                    <li><a href="#software-development">Software Development</a></li>
-    <li><a href="#website-hosting">Website Hosting</a></li>
-    <li><a href="#digital-training">Digital Training</a></li>
-    <li><a href="services.html">Services</a></li>
-</ul>
+                        <li><a href="#software-development">Software Development</a></li>
+                        <li><a href="#website-hosting">Website Hosting</a></li>
+                        <li><a href="#digital-training">Digital Training</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
 
                 </li>
 
-            <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-        </ul>
-
-
-
-
-
-        </nav>
+            </ul>
+       </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <img src="hero.png" alt="Team collaborating in modern office" class="hero-image" loading="lazy">
-            <div class="hero-content">
-                <h2>Innovative Digital Solutions for Your Business</h2>
-                <p>We develop, host, and train on software and websites to help you grow.</p>
-                <a href="services.html" class="cta-button">Explore Our Services</a>
-            </div>
-        </section>
+        
 
-        <section id="about About-Us" class="card fade-in" >
+<section id="hero">
+    <div class="hero-slides">
+        <img src="hero.png" alt="Team collaborating in modern office" class="hero-image active-slide" loading="lazy">
+        <img src="hero1.png" alt="Hero Image 2" class="hero-image" loading="lazy">
+    </div>
+    <div class="hero-content">
+        <h2>Innovative Digital Solutions for Your Business</h2>
+        <p>We develop, host, and train on software and websites to help you grow.</p>
+        <a href="services.html" class="cta-button">Explore Our Services</a>
+    </div>
+</section>
+
+        <section id="about" class="card fade-in">
             <h3>About Us</h3>
-            <p>We are a team of passionate developers, designers, and digital strategists committed to turning your ideas into reality. Our expertise spans across software development, web hosting, and providing comprehensive training to empower you and your team.</p>
+            <p>We are a team of passionate developers, designers, and digital strategists committed to turning your
+                ideas into reality. Our expertise spans across software development, web hosting, and providing
+                comprehensive training to empower you and your team.</p>
         </section>
 
 
         <section id="about-us-photos">
-    <h3 class="card fade-in">Meet the Team</h3>
-    <div class="team-photo">
-        <img src="team-member-headshot1.png" alt="Headshot of a team member" class="headshot-img card fade-in" loading="lazy">
-        <p>Okedigwe Kingsley</p>
-        <img src="team-member-headshot2.png" alt="Headshot of a team member" class="headshot-img card fade-in" loading="lazy">
-        <p>Ikechukwu Austin</p>
-        <img src="team-member-headshot3.png" alt="Headshot of a team member" class="headshot-img card fade-in" loading="lazy">
-    </div>
-    <div class="office-photo-container">
-        <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
+            <h3 class="card fade-in">Meet the Team</h3>
+            <div class="team-photo">
+                <img src="team-member-headshot1.png" alt="Headshot of a team member" class="headshot-img card fade-in"
+                    loading="lazy">
+                <p>Okedigwe Kingsley</p>
+                <img src="team-member-headshot2.png" alt="Headshot of a team member" class="headshot-img card fade-in"
+                    loading="lazy">
+                <p>Ikechukwu Austin</p>
+                <img src="team-member-headshot3.png" alt="Headshot of a team member" class="headshot-img card fade-in"
+                    loading="lazy">
+            </div>
+        </section>
+        
+        <section class="full-width-image-section">
+            <div class="office-photo-container">
+     <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
     </div>
 </section>
-
-
-
         <!-- <section id="featured-services">
             <h3>Featured Services</h3>
             <div class="service-cards">
@@ -103,57 +108,67 @@
 
 
         <section id="services-list">
-    <h3 class="card fade-in">Our Services</h3>
-    <div class="service-item">
-        <img src="software-development-icon1.png" alt="Software development icon" class="service-icon card fade-in" loading="lazy">
-        <img src="software-development-icon2.png" alt="Software development icon" class="service-icon card fade-in" loading="lazy">
-        <div class="card fade-in"><h4>Software Development</h4>
-        <p>We build custom software and applications tailored to your business needs.</p></div>
-    </div>
-    <div class="service-item card fade-in" >
-        <img src="website-hosting-icon.png" alt="Website hosting icon" class="service-icon card fade-in" loading="lazy">
-        <h4 id="Website-Hosting">Website Hosting</h4>
-        <p>Reliable and secure hosting solutions to keep your online presence live.</p>
-    </div>
-    </section>
+            <h3 class="card fade-in">Our Services</h3>
+            <div class="service-item">
+                <img src="software-development-icon1.png" alt="Software development icon"
+                    class="service-icon card fade-in" loading="lazy">
+                <img src="software-development-icon2.png" alt="Software development icon"
+                    class="service-icon card fade-in" loading="lazy">
+        </section>
+        <section id="software-development">
+            <div class="card fade-in">
+                <h4>Software Development</h4>
+                <p>We build custom software and applications tailored to your business needs.</p>
+            </div>
+            </div>
+        </section>
+
+        <div class="service-item card fade-in">
+            <img src="website-hosting-icon.png" alt="Website hosting icon" class="service-icon card fade-in"
+                loading="lazy">
+            <h4 id="website-hosting">Website Hosting</h4>
+            <p>Reliable and secure hosting solutions to keep your online presence live.</p>
+        </div>
+        </section>
 
     </main>
 
-   <footer>
+    <footer>
         <p">Contact us:</p>
-        <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt"></i></a></p>
-        <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope"></i></a></p>
-        <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
-        
+            <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt"></i></a></p>
+            <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope"></i></a></p>
+            <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
 
-        <div class="social-links">
-            <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class= "fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter"></i></a>
-            
-        </div>
-        <p>&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
+
+            <div class="social-links">
+                <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            </div>
+            <p>&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
     </footer>
 
-    
+
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
-<button id="backToTopBtn" title="Go to top">^</button>
+    <button id="backToTopBtn" title="Go to top">^</button>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
