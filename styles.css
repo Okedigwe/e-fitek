@@ -471,7 +471,7 @@ footer {
         justify-content: space-between; /* Pushes logo to left, icon to right */
         align-items: center; /* Vertically centers them */
         padding: 1rem;
-        height: 70px; /* Adjust this value to set a fixed height for the nav bar */
+        height: 20px; /* Adjust this value to set a fixed height for the nav bar */
     }    
 
     nav ul {
@@ -508,11 +508,6 @@ footer {
   /* Adjust padding for main content sections */
   section {
     padding: 2rem 1rem;
-  }
-
-  /* Make the logo fit better on smaller screens */
-  .logo-img {
-    height: 30px;
   }
 
   /* Header padding */
@@ -559,4 +554,3 @@ footer {
   nav ul.active {
     display: flex;
   }
-}
