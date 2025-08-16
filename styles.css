@@ -445,19 +445,19 @@ footer {
   }
 
   /* Ensure the hero image covers the entire section */
-  .hero-image {
+  /* .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* You can add object-position to control the focal point of the image on mobile */
-    object-position: center center;
-  }
+    /*object-position: center center;
+  } */
 
-  /* .hero-image {
+  .hero-image {
     width: 100%;
     height: auto; /* Change from height: 100% */
     object-fit: cover;
-  } */
+  }
 
   @keyframes slideIn {
     to {
