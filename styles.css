@@ -513,14 +513,14 @@ footer {
 
   .hero-content h2 {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     top: 10%;
     left: 50%;
   }
 
   .hero-content p {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
 
   #hero {
@@ -655,13 +655,13 @@ footer {
   transform: translateY(10px);*/
   color: #ffffff;
   top: 10%;  
-  font-size: 1rem;
+  font-size: 0.5rem;
 } 
 
 .hero-subtitle {
   color: brown;
-  top: 10%;  
-  font-size: 1rem;
+  top: 10;  
+  font-size: 0.5rem;
 }
 
 }
