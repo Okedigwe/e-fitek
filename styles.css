@@ -659,7 +659,7 @@ footer {
 } 
 
 .hero-subtitle {
-  color: brown;
+  color: rgb(255, 255, 255);
   top: 10;  
   font-size: 0.5rem;
 }
