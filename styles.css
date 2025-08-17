@@ -508,13 +508,13 @@ footer {
   .hero-content {
     padding: 0 1rem;
     transform: translate(-50%, -50%);
-    top: 30%;
+    top: 10%;
   }
 
   .hero-content h2 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    top: 20%;
+    top: 10%;
     left: 50%;
   }
 
@@ -654,19 +654,13 @@ footer {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: translateY(10px);*/
   color: #ffffff;
-  top: 30%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;  
   font-size: 1rem;
 } 
 
 .hero-subtitle {
   color: brown;
-  top: 30%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;  
   font-size: 1rem;
 }
 
