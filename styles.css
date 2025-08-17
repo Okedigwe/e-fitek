@@ -38,10 +38,12 @@ img {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: translateY(10px);*/
   color: #ffffff;
+  
 } 
 
 .hero-subtitle {
   color: brown;
+  
 }
 
 /* Animation class to fade in the text */
@@ -236,7 +238,7 @@ section {
 
 .hero-content {
   position: relative;
-  top: 50%;
+  top: 30%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
@@ -506,6 +508,7 @@ footer {
   .hero-content {
     padding: 0 1rem;
     transform: translate(-50%, -50%);
+    top: 30%;
   }
 
   .hero-content h2 {
@@ -643,4 +646,29 @@ footer {
     display: flex;
   }
 
+  .dynamic-text {
+  /*display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(10px);*/
+  color: #ffffff;
+  top: 30%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+} 
+
+.hero-subtitle {
+  color: brown;
+  top: 30%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
 }
+
+}
+
