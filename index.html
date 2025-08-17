@@ -16,16 +16,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
     <title>E-Fitek Digital Services - Digital Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
+    <link rel="icon" type="png" href="https://efitekk.vercel.app/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VZ3X1F5K6"></script>    
+    <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
+
 </head>
 
 <body>
-
     <header>
         <nav>
-
             <div class="logo">
                 <a href="index.html">
                     <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
@@ -38,21 +37,23 @@
                 <li><a href="index.html">Home</a></li>
 
                 <li class="dropdown">
-
-                    <a href="services.html">Services</a>
-
+                    <a>Services</a>
                     <ul class="dropdown-menu">
-
-                        <li><a href="#software-development">Software Development</a></li>
-                        <li><a href="#website-hosting">Website Hosting</a></li>
-                        <li><a href="#digital-training">Digital Training</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#software-development">Software Development</a></li>
+                        <li><a href="services.html#website-hosting">Website Hosting</a></li>
+                        <li><a href="services.html#digital-training">Digital Training</a></li>
+                        <li><a href="services.html#content-management">Content Management</a></li>
                     </ul>
-
                 </li>
-
+                <li class="dropdown">
+                    <a>Organization</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">Meet Our Team</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
 
+                </li>
             </ul>
         </nav>
     </header>
@@ -72,8 +73,8 @@
                 <p>We develop, host, and train on software and websites to help you grow.</p>
                 <a href="services.html" class="cta-button">Explore Our Services</a>
             </div>
-                
-            </p>         
+               
+            </p>  
 
 
         </section>
@@ -96,22 +97,8 @@
             </form>
         </section>
 
-        <section id="services-overview" class="card fade-in">
-            <h3>What We Do</h3>
-            <p>At E-Fitek Digital Services, we specialize in providing comprehensive digital solutions that empower your
-                business. From custom software development to reliable web hosting and expert digital training, we are
-                here to support your growth.</p>
-        </section>
-
-        <section id="about" class="card fade-in">
-            <h3>About Us</h3>
-            <p>We are a team of passionate developers, designers, and digital strategists committed to turning your
-                ideas into reality. Our expertise spans across software development, web hosting, and providing
-                comprehensive training to empower you and your team.</p>
-        </section>
-
-
-        <section id="about-us-photos">
+        
+        <!-- <section id="about-us-photos">
             <h3 class="card fade-in">Meet the Team</h3>
             <div class="team-photo">
                 <img src="team-member-headshot1.png" alt="Headshot of a team member" class="headshot-img card fade-in"
@@ -171,33 +158,69 @@
                     </strong></p><br>
                 <p><strong>Specializations</strong> <br>
                     <strong>SAP:</strong>SAP Functional Supply Chain and Logistics Consultant, FICO <br>
-                    <strong>Sales:</strong> Sales Cloud Consultant<br>                    
+                    <strong>Sales:</strong> Sales Cloud Consultant<br>
                 </p>
             </div>
-        </section>
+        </section> -->
+
+
+<div class="service-cards-container">
+
+    <div class="service-card">
+        <img src="web-design-icon.png" alt="Web Design" class="service-icon">
+        <h3 class="card-title">Web Design</h3>
+        <p class="card-description">Create a brand and design to communicate your value.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="seo-icon.png" alt="SEO" class="service-icon">
+        <h3 class="card-title">SEO</h3>
+        <p class="card-description">Boost your online visibility with strategic search engine optimization.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="ppc-icon.png" alt="PPC" class="service-icon">
+        <h3 class="card-title">PPC</h3>
+        <p class="card-description">Drive immediate results with targeted pay-per-click advertising campaigns.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="email-icon.png" alt="Emails & SMS" class="service-icon">
+        <h3 class="card-title">Emails & SMS</h3>
+        <p class="card-description">Engage your audience directly through effective email and SMS campaigns.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="social-icon.png" alt="Social Media" class="service-icon">
+        <h3 class="card-title">Social Media</h3>
+        <p class="card-description">Build a strong brand presence and connect with your customers on social media.</p>
+    </div>
+
+</div>
+
+
+        
 
         <section class="full-width-image-section">
             <div class="office-photo-container">
                 <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
             </div>
         </section>
-        <!-- <section id="featured-services">
-            <h3>Featured Services</h3>
-            <div class="service-cards">
-                <div class="card">
-                    <h4>Software Development</h4>
-                    <p>Custom software and application development tailored to your specific needs.</p>
-                </div>
-                <div class="card">
-                    <h4>Website Hosting</h4>
-                    <p>Reliable and secure hosting solutions to keep your online presence live.</p>
-                </div>
-                <div class="card">
-                    <h4>Digital Training</h4>
-                    <p>Empower your team with our expert-led training on the latest technologies.</p>
-                </div>
-            </div>
-        </section> -->
+
+        <section id="services-overview" class="card fade-in">
+            <h3>What We Do</h3>
+            <p>At E-Fitek Digital Services, we specialize in providing comprehensive digital solutions that empower your
+                business. From custom software development to reliable web hosting and expert digital training, we are
+                here to support your growth.</p>
+        </section>
+
+        <section id="about" class="card fade-in">
+            <h3>About Us</h3>
+            <p>We are a team of passionate developers, designers, and digital strategists committed to turning your
+                ideas into reality. Our expertise spans across software development, web hosting, and providing
+                comprehensive training to empower you and your team.</p>
+        </section>
+
 
         <section id="services-list">
             <h3 class="card fade-in">Our Services</h3>
