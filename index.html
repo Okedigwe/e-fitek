@@ -2,27 +2,38 @@
 <html lang="en">
 
 <head>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Fitek Digital Services offers innovative digital solutions for businesses.">
+    <meta name="keywords" content="software development, web hosting, digital training, E-Fitek, digital services">
+    <meta name="author" content="E-Fitek Digital Services">
+    <link rel="canonical" href="https://efitekk.vercel.app/">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
     <title>E-Fitek Digital Services - Digital Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VZ3X1F5K6"></script>    
 </head>
 
 <body>
 
     <header>
         <nav>
-         
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
-            </a>
-        </div>
-        <button class="menu-toggle" aria-label="Toggle navigation menu">
-            <i class="fas fa-bars"></i>
-        </button>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
 
@@ -43,23 +54,53 @@
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
-       </nav>
+        </nav>
     </header>
 
     <main>
-        
 
-<section id="hero">
-    <div class="hero-slides">
-        <img src="hero.png" alt="Team collaborating in modern office" class="hero-image active-slide" loading="lazy">
-        <img src="hero1.png" alt="Hero Image 2" class="hero-image" loading="lazy">
-    </div>
-    <div class="hero-content">
-        <h2>Innovative Digital Solutions for Your Business</h2>
-        <p>We develop, host, and train on software and websites to help you grow.</p>
-        <a href="services.html" class="cta-button">Explore Our Services</a>
-    </div>
-</section>
+
+        <section id="hero">
+            <div class="hero-slides">
+                <img src="hero.png" alt="Team collaborating in modern office" class="hero-image active-slide"
+                    loading="lazy">
+                <img src="hero1.png" alt="Hero Image 2" class="hero-image" loading="lazy">
+            </div>
+            <div class="hero-content">
+                <h2>Innovative Digital Solutions for Your Business</h2>
+                <p>We develop, host, and train on software and websites to help you grow.</p>
+                <a href="services.html" class="cta-button">Explore Our Services</a>
+            </div>
+                <p class="hero-subtitle">We are passionate about <span id="dynamic-words" class="dynamic-text"></span>
+            </p>         
+
+
+        </section>
+
+        <section>
+            <form class="hero-form">
+                <div class="form-group">
+                    <label for="full-name"><i class="fas fa-user"></i></label>
+                    <input type="text" id="full-name" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i></label>
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                </div>
+                <button type="submit" class="cta-button get-started-btn">Get Started</button>
+            </form>
+        </section>
+
+        <section id="services-overview" class="card fade-in">
+            <h3>What We Do</h3>
+            <p>At E-Fitek Digital Services, we specialize in providing comprehensive digital solutions that empower your
+                business. From custom software development to reliable web hosting and expert digital training, we are
+                here to support your growth.</p>
+        </section>
 
         <section id="about" class="card fade-in">
             <h3>About Us</h3>
@@ -75,9 +116,9 @@
                 <img src="team-member-headshot1.png" alt="Headshot of a team member" class="headshot-img card fade-in"
                     loading="lazy">
                 <p><strong>
-                    Engr. Okedigwe Kingsley <br>
-                    Full-Stack Software Developer
-                </strong></p><br>
+                        Okedigwe Kingsley <br>
+                        Full-Stack Software Developer
+                    </strong></p><br>
                 <p><strong>Specializations</strong> <br>
                     <strong>SAP:</strong> Technical Consultant, ABAP Developer Associate, SAP BTP, SAP CPI <br>
                     <strong>Web Development:</strong> JavaScript (Node.js, Express), Ruby <br>
@@ -85,43 +126,60 @@
                     <strong>Foundational Skills:</strong> HTML, CSS <br>
                 </p>
 
-                
+                <img src="team-member-headshot5.png" alt="Headshot of a team member" class="headshot-img card fade-in"
+                    loading="lazy">
+                <p><strong>
+                        Nonia Madisa <br>
+                        Software Developer Associate/Customer Support
+                    </strong></p><br>
+
                 <img src="team-member-headshot2.png" alt="Headshot of a team member" class="headshot-img card fade-in"
                     loading="lazy">
-                <p><strong>Engr. Ikechukwu Austin</strong>
+                <p><strong>Ikechukwu Austin</strong>
                 <p>BSc. Computer Science, Software Developer Associate</p>
                 <img src="team-member-headshot3.png" alt="Headshot of a team member" class="headshot-img card fade-in"
                     loading="lazy">
                 <p><strong>
-                    Engr. Majed Juhi <br>
-                    Front-End Software Engineer
-                </strong></p><br>
+                        Engr. Majed Juhi <br>
+                        Front-End Software Engineer
+                    </strong></p><br>
                 <p><strong>Specializations</strong> <br>
-                    <strong>SAP:</strong> Senior SAP Technical Consultant - Integration Suite, SAP CPI, SAP  BTP <br>
+                    <strong>SAP:</strong> Senior SAP Technical Consultant - Integration Suite, SAP CPI, SAP BTP <br>
                     <strong>Web Development:</strong> JavaScript (Node.js, Express, React), Ruby <br>
                     <strong>Scripting:</strong> Python <br>
-                    <strong>Foundational Skills:</strong> HTML, CSS <br> 
+                    <strong>Foundational Skills:</strong> HTML, CSS <br>
                 </p>
                 <img src="team-member-headshot4.png" alt="Headshot of a team member" class="headshot-img card fade-in"
                     loading="lazy">
                 <p><strong>
-                    Engr. Walter Ebuka .O. <br>
-                    Back-End Software Developer
-                </strong></p><br>
+                        Walter Ebuka .O. <br>
+                        Back-End Software Developer
+                    </strong></p><br>
                 <p><strong>Specializations</strong> <br>
                     <strong>SAP:</strong> SAP Functional Consultant - SAP Customer Support Associate<br>
                     <strong>Web Development:</strong> C#, JavaScript (Node.js, Express)<br>
                     <strong>Scripting:</strong> Python<br>
-                   <strong>Foundational Skills:</strong> SQL <br> 
+                    <strong>Foundational Skills:</strong> SQL <br>
+                </p>
+
+                <img src="team-member-headshot6.png" alt="Headshot of a team member" class="headshot-img card fade-in"
+                    loading="lazy">
+                <p><strong>
+                        Bobai Nuhu <br>
+                        MBA. SAP Functional Consultant Associate
+                    </strong></p><br>
+                <p><strong>Specializations</strong> <br>
+                    <strong>SAP:</strong>SAP Functional Supply Chain and Logistics Consultant, FICO <br>
+                    <strong>Sales:</strong> Sales Cloud Consultant<br>                    
                 </p>
             </div>
         </section>
-        
+
         <section class="full-width-image-section">
             <div class="office-photo-container">
-     <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
-    </div>
-</section>
+                <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
+            </div>
+        </section>
         <!-- <section id="featured-services">
             <h3>Featured Services</h3>
             <div class="service-cards">
@@ -200,6 +258,33 @@
     <!--End of Tawk.to Script-->
 
     <button id="backToTopBtn" title="Go to top">^</button>
+
+    <script>
+        const words = ["designing", "helping", "conversion", "learning", "writing", "Facebook"];
+        const dynamicTextSpan = document.getElementById('dynamic-words');
+        let wordIndex = 0;
+
+        function animateText() {
+            const currentWord = words[wordIndex];
+
+            dynamicTextSpan.textContent = currentWord;
+
+            dynamicTextSpan.classList.add('fade-in');
+            dynamicTextSpan.classList.remove('fade-out');
+
+            setTimeout(() => {
+                dynamicTextSpan.classList.remove('fade-in');
+                dynamicTextSpan.classList.add('fade-out');
+
+                setTimeout(() => {
+                    wordIndex = (wordIndex + 1) % words.length;
+                    animateText();
+                }, 500);
+            }, 2000);
+        }
+
+        animateText();
+    </script>
 
     <script src="script.js"></script>
 </body>
