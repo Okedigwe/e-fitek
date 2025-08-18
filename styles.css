@@ -1017,3 +1017,58 @@ footer {
 }
 
 
+
+
+
+
+@media (max-width: 768px) {
+    /* ...your other mobile styles... */
+
+    /* Stacks team members in a single column on mobile */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Makes the team member photos responsive */
+    .member-photo {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* ...your other mobile styles... */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1rem;
+    }
+
+    /* Shows the hamburger icon on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hides the horizontal menu on mobile */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px; /* Adjust this to sit below your header */
+        left: 0;
+        width: 100%;
+        flex-direction: column; /* Stacks items vertically */
+        background: #333;
+    }
+
+    /* JavaScript will add an 'active' class to show the menu */
+    .nav-menu.active {
+        display: flex;
+    }
+}
