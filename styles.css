@@ -207,8 +207,8 @@ section {
   flex-wrap: wrap;
   /* Allows the form to wrap to the next line on smaller screens */
   max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;  
+  background-color: transparent;
   padding: 30px;
   border-radius: 5px;
   gap: 10px;
@@ -249,6 +249,12 @@ section {
 
 .hero-image.active-slide {
   opacity: 1;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
 .hero-content {
@@ -333,11 +339,12 @@ section {
 }
 
 .card {
-  background: #fff;
+  /* background: #fff; */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: transparent;
 }
 
 
@@ -694,7 +701,7 @@ footer {
 
 .hero-subtitle {
   color: rgb(255, 255, 255);
-  top: 10;  
+  top: 100%;  
   font-size: 0.5rem;
 }
 
@@ -842,3 +849,16 @@ footer {
   color: #007bff;
   /* Change color on hover */
 }
+
+
+.watermark-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1; /* Pushes the video behind all other content */
+}
+
+
