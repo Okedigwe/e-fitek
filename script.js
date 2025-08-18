@@ -113,22 +113,10 @@ menuToggle.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdowns = document.querySelectorAll('.dropdown > a');
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', (e) => {
-            // This prevents the link from navigating away
-            e.preventDefault();
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
-            // This toggles the 'active' class on the parent <li> element
-            const parentLi = dropdown.parentElement;
-            parentLi.classList.toggle('active');
-
-            // This ensures only one dropdown is open at a time
-            document.querySelectorAll('.dropdown.active').forEach(item => {
-                if (item !== parentLi) {
-                    item.classList.remove('active');
-                }
-            });
-        });
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
     });
 });
