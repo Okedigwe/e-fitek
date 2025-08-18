@@ -827,41 +827,7 @@ footer {
         display: block; /* Show the dropdown on hover */        
     }
 
-        .section-title {
-        font-size: 1.8rem; /* Shrinks the title */
-        margin-bottom: 30px;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr; /* Stacks team members in a single column */
-        gap: 30px;
-    }
-
-    .team-member {
-        padding: 20px;
-    }
-
-    .member-photo {
-        width: 120px; /* Reduces image size */
-        height: 120px;
-        margin-bottom: 15px;
-    }
-
-    .member-name {
-        font-size: 1.4rem; /* Shrinks name */
-    }
-
-    .member-title {
-        font-size: 0.9rem; /* Shrinks title */
-    }
-
-    .member-bio {
-        font-size: 0.85rem; /* Shrinks bio text */
-    }
-
-    .social-links {
-        font-size: 1.2rem; /* Reduces icon size */
-    }
+    
 }
 
 
