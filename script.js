@@ -132,3 +132,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+
+
+
+// Function to show the correct service section based on URL hash
+function showServiceSection() {
+    const hash = window.location.hash;
+    const allSections = document.querySelectorAll('.service-content');
+    const defaultSection = document.getElementById('default-intro');
+
+    // Hide all sections first
+    allSections.forEach(section => {
+        section.classList.remove('active-content');
+    });
+
+    // Show the section that matches the hash, or the default section if no hash
+    if (hash) {
+        const targetSection = document.querySelector(hash);
+        if (targetSection) {
+            targetSection.classList.add('active-content');
+        } else {
+            defaultSection.classList.add('active-content');
+        }
+    } else {
+        defaultSection.classList.add('active-content');
+    }
+}
+
+// Event listener for when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    // Show the correct section on initial load
+    showServiceSection();
+
+    // Event listener for hash changes (when a user navigates between sections)
+    window.addEventListener('hashchange', showServiceSection);
+});
+
+

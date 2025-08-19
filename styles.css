@@ -21,6 +21,317 @@ html {
   height: auto;
 } */
 
+
+/* ====================================
+   Project Roadmap Section
+   ==================================== */
+#roadmap-section {
+    padding: 6rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.roadmap-container {
+    display: grid;
+    gap: 40px;
+    margin-top: 3rem;    
+}
+
+.roadmap-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.roadmap-progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+
+/* ====================================
+   Contact Form Enhancements
+   ==================================== */
+
+#contact-form {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Adds a frosted glass effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari support */
+    padding: 3rem; /* Increased padding */
+    border-radius: 15px; /* Softer, rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* More prominent, soft shadow */
+    max-width: 600px;
+    margin: 5rem auto 2rem; /* Centers the form and adds vertical space */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for definition */
+}
+
+#contact-form h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact-form p {
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7); /* Match form transparency */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+.roadmap-progress {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.8s ease-in-out;
+}
+
+.roadmap-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-details p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-details span {
+    font-size: 0.9rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* --- Media Queries for Roadmap Section --- */
+
+@media (min-width: 769px) {
+    .roadmap-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .roadmap-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1850px) {
+    .roadmap-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 5%;
+    }
+}
+
+
+/* ====================================
+   Featured Articles Section
+   ==================================== */
+#blog-section {
+    padding: 6rem 2rem;
+    background-color: #f4f4f4;
+}
+
+#blog-section h2 {
+    margin-bottom: 3rem;
+}
+
+.blog-articles-container {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+}
+
+.blog-article {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.blog-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 2rem;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.article-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Media Queries for Blog Section --- */
+
+@media (min-width: 769px) {
+    .blog-articles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog-articles-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1850px) {
+    .blog-articles-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 5%;
+    }
+}
+
+
+
+/* ====================================
+   User Personas Section
+   ==================================== */
+#personas-section {
+    padding: 6rem 2rem;
+    background-color: #ffffff;
+}
+
+.personas-grid {
+    display: grid;
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+.persona-card {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.persona-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.persona-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #007bff;
+}
+
+.persona-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.persona-bio {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- Media Queries for Personas Section --- */
+
+@media (min-width: 769px) {
+    .personas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .personas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1850px) {
+    .personas-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 5%;
+    }
+}
+
 /* -------------------------------------------------- */
 /* ====================================
    Body, Header, nav, main, Section
@@ -1052,4 +1363,103 @@ footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ====================================
+   Service Page Dynamic Content
+   ==================================== */
+
+.service-details-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.service-content {
+    display: none; /* Hide all service content by default */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.service-content.active-content {
+    display: block; /* Show the active service content */
+}
+
+/* FAQ section styling (you already have some, this is an update) */
+.faq-section {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.faq-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    padding: 0 18px;
+    background-color: transparent; /* Changed to transparent for watermark */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+/* Contact us prompt styling */
+.contact-prompt {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.contact-prompt h4 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.contact-prompt p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- */
 
