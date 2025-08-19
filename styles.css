@@ -2,7 +2,15 @@
    General settings
    ==================================== */
 
-body,
+.services-page main {
+  display: block !important;
+}
+
+body.services-page main {
+  display: block !important;
+}
+
+   body,
 html {
   width: 100%;
   overflow-x: hidden;
@@ -1369,7 +1377,7 @@ footer {
 
 
 
-/* ---------------------------------------------------------- */
+/* ----------------------------------------------------------*/
 /* ====================================
    Service Page Dynamic Content
    ==================================== */
@@ -1380,8 +1388,7 @@ footer {
     margin: auto;
 }
 
-.service-content {
-    display: none; /* Hide all service content by default */
+.service-content {    
     animation: fadeIn 0.8s ease-in-out;
 }
 
@@ -1453,13 +1460,4 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-/* --------------------------------------------- */
 

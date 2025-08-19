@@ -173,3 +173,117 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
+
+// ''''''''''''''''''''''''''''''''''''''''
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Back to Top Button Logic
+    let mybutton = document.getElementById("backToTopBtn");
+    if (mybutton) {
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.classList.add("show");
+            } else {
+                mybutton.classList.remove("show");
+            }
+        };
+        mybutton.addEventListener("click", () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    }
+
+    // FAQ Accordion Logic
+    let faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(function (question) {
+        question.addEventListener('click', function () {
+            let answer = this.nextElementSibling;
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // Hero Slideshow Logic
+    const slides = document.querySelectorAll('.hero-image');
+    let currentSlide = 0;
+    function nextSlide() {
+        if (slides.length === 0) return;
+        slides[currentSlide].classList.remove('active-slide');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active-slide');
+    }
+    if (slides.length > 1) {
+        setInterval(nextSlide, 5000);
+    }
+
+    // Dynamic Service Page Logic
+    const serviceLinks = document.querySelectorAll('.service-cards-container a, .service-content a');
+    const serviceSections = document.querySelectorAll('.service-details-container .service-content');
+    const backToServicesBtn = document.getElementById('back-to-services-btn');
+    const servicesLanding = document.getElementById('services-landing');
+
+    // This is the core part that makes content appear.
+    serviceLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            // Check if the target section is a service detail section
+            if (targetSection && targetSection.classList.contains('service-content')) {
+                e.preventDefault();
+
+                // Hide all sections
+                serviceSections.forEach(section => {
+                    section.classList.remove('active-content');
+                });
+
+                // Add active class to the target section
+                targetSection.classList.add('active-content');
+                // Scroll to the details container for a smooth transition
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // "Back to Services" button logic
+    if (backToServicesBtn) {
+        backToServicesBtn.addEventListener('click', () => {
+            // Hide all content sections
+            serviceSections.forEach(section => {
+                section.classList.remove('active-content');
+            });
+            // Show the default intro
+            document.getElementById('default-intro').classList.add('active-content');
+            // Scroll back to the top of the service cards
+            servicesLanding.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// This is the correct line to select all service cards
+const serviceCards = document.querySelectorAll('body.services-page main .');
+
+// This code then loops through each card to add the click event listener
+serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+        // ... (your logic for showing content)
+    });
+});
