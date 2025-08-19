@@ -967,7 +967,7 @@ footer {
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: translateY(10px);*/
-    color: #0f0020;
+    color: #ffffff;
   }
 
   .hero-subtitle {
@@ -1257,13 +1257,13 @@ footer {
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: translateY(10px);*/
-    color: #0f0020;
+    color: #ffffff;
     top: 10%;
     font-size: 0.5rem;
   }
 
   .hero-subtitle {
-    color: rgb(72, 2, 2);
+    color: #0f0020;
     top: 80%;
     font-size: 0.5rem;
     margin-top: -12%;
