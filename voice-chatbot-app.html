@@ -456,7 +456,8 @@
             const userText = userInput.value.trim();
             const imageToSend = currentImage;
             
-            if (userText || imageToSend) {
+            if (userText.length > 0 || imageToSend) {
+                console.log("Sending message...", { userText, imageToSend: !!imageToSend });
                 // Display the user's message with an image if available
                 appendMessage('user', userText, imageToSend ? imagePreview.src : null);
                 
