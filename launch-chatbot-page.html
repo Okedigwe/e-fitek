@@ -9,49 +9,29 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
         }
-
-        /* Custom styles for the fixed button container */
-        .fixed-button-container {
-            position: fixed;
-            bottom: 2rem;
-            left: 2rem;
-            z-index: 1000;
-        }
-
-        /* Custom styles for the button itself */
+        /* Custom styles for the button */
         .launch-button {
-            background-color: rgba(0, 0, 0, 0.9); /* Translucent black */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
-            white-space: nowrap;
+            background: linear-gradient(45deg, #3b82f6, #2563eb);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .launch-button:hover {
-            background-color: rgba(0, 0, 0, 0.95); /* Slightly darker translucent black on hover */
+            background: linear-gradient(45deg, #2563eb, #1d4ed8);
             transform: scale(1.05);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
-
         .launch-button:active {
             transform: scale(0.95);
         }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <!-- Main page content would go here -->
-    <!-- For demonstration purposes, we'll add some content to show the button stays fixed on scroll -->
-    <div class="h-[150vh] flex items-center justify-center p-8 text-gray-800">
-        <h1 class="text-4xl font-bold">Scroll Down to See the Button Stay</h1>
-    </div>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
-    <!-- The fixed button container -->
-    <div class="fixed-button-container">
-        <a href="voice-chatbot-app.html" class="launch-button text-white font-semibold py-8 px-4 rounded-full text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+    <!-- A simple container for the button -->
+    <div class="flex flex-col items-center justify-center p-8 bg-white rounded-3xl shadow-xl max-w-sm w-full">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Ready to Chat?</h1>
+        <p class="text-gray-600 mb-8 text-center">Click the button below to launch our AI voice assistant in a new window.</p>
+        <a href="voice-chatbot-app.html" class="launch-button text-white font-semibold py-4 px-8 rounded-full text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
             Launch Voice Chatbot
         </a>
     </div>
