@@ -1459,12 +1459,12 @@ footer {
     margin-bottom: 2rem;
 }
 
+.nav-menu a {
+    color: black;
+}
 
 
 
-
-
-
-
-
-
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
