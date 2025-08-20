@@ -270,6 +270,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// ..................................................
+// FAQ Accordion Logic
+let faqQuestions = document.querySelectorAll('.faq-question');
+faqQuestions.forEach(function (question) {
+    question.addEventListener('click', function () {
+        let answer = this.nextElementSibling;
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+    });
+});
+
+
+
+
 
 
 
