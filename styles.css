@@ -141,33 +141,48 @@ html {
 }
 
 .contact-form .cta-button:hover {
-    background-color: #0056b3;
+    background-color: green;
 }
 
+.roadmap-details.bg-gray{
+  color: #e8e8e8;
+}
+
+.roadmap-container {
+  background-color: #e8e8e8;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-white h3 {
+    color: white;
+}
 
 .roadmap-progress {
     height: 100%;
-    background-color: #007bff;
+    background-color: #150c3a;
     border-radius: 5px;
     transition: width 0.8s ease-in-out;
 }
 
 .roadmap-details h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #150c3a;
     margin-bottom: 0.5rem;
 }
 
 .roadmap-details p {
     font-size: 1rem;
-    color: #666;
+    color: #150c3a;
     font-style: italic;
     margin-bottom: 0.5rem;
 }
 
 .roadmap-details span {
     font-size: 0.9rem;
-    color: #007bff;
+    color: green;
     font-weight: bold;
 }
 
@@ -198,7 +213,7 @@ html {
    ==================================== */
 #blog-section {
     padding: 6rem 2rem;
-    background-color: #f4f4f4;
+    background-color: #e8e8e8;
 }
 
 #blog-section h2 {
@@ -212,7 +227,7 @@ html {
 }
 
 .blog-article {
-    background: #fff;
+    background: #e8e8e8;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -238,26 +253,30 @@ html {
 .article-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: white;
 }
 
 .article-content p {
-    color: #666;
+    color: white;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
+
+
 
 /* --- Media Queries for Blog Section --- */
 
 @media (min-width: 769px) {
     .blog-articles-container {
         grid-template-columns: repeat(2, 1fr);
+        /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
     }
 }
 
 @media (min-width: 1200px) {
     .blog-articles-container {
         grid-template-columns: repeat(3, 1fr);
+        /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
     }
 }
 
@@ -265,6 +284,7 @@ html {
     .blog-articles-container {
         grid-template-columns: repeat(3, 1fr);
         padding: 0 5%;
+        /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
     }
 }
 
@@ -387,7 +407,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #e8e8e8;
   text-decoration: none;
   font-weight: bold;
 }
@@ -426,34 +446,7 @@ section {
 /* ====================================
    cta button, cards, and hover
    ==================================== */
-.cta-button {
-  background: #007bff;
-  color: #fff;
-  padding: 0.75rem 2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  /* Lifts the button slightly */
-  background-color: #0056b3;
-}
-
-/* Update your CSS to include the new button class */
-/* .hero-cta-button {
-    background: #007bff;
-    color: #fff;
-    padding: 0.75rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.hero-cta-button:hover {
-    background: #0056b3;
-} */
 
 .card:hover {
   transform: translateY(-5px);
@@ -557,7 +550,7 @@ section {
   max-width: 1200px;
   padding: 0 2rem;
   text-align: center;
-  color: #363636;
+  color: #e8e8e8;
   /* Animation */
   opacity: 0;
   animation: slideIn 1s forwards;
@@ -566,14 +559,9 @@ section {
 
 /* Hero text styles */
 .hero-content h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 
@@ -599,7 +587,7 @@ section {
   padding-top: 5%;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #2c3e50;
+  color: #150c3a;
   /* A dark, professional text color */
   text-transform: uppercase;
 }
@@ -671,7 +659,7 @@ section {
 }
 
 .team-section .social-links a:hover {
-  color: #007bff;
+  color: green
 }
 
 
@@ -783,11 +771,12 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 0;
+  color: #e8e8e8
 }
 
 .service-cards-container .card-description {
   font-size: 0.95rem;
-  color: #666;
+  color: #e8e8e8;
   line-height: 1.4;
 }
 
@@ -813,6 +802,10 @@ footer {
   object-fit: cover;
 }
 
+/* ====================================
+   FOOTER
+   ==================================== */
+
 
 /* ====================================
    backtotopbtn
@@ -828,9 +821,9 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #e8f1e24c;
-  /* Using a consistent color */
-  color: white;
+  color:  #e8e8e8;
+  background-color: #150c3a;
+  /* Using a consistent color */  
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -850,7 +843,7 @@ footer {
 }
 
 #backToTopBtn:hover {
-  background-color: #0f1113;
+  background-color: #00b324;
 }
 
 /* ====================================
@@ -1050,7 +1043,7 @@ footer {
     padding: 0 0.5rem;
     transform: translate(-50%, -50%);
     margin-top: -10%;
-    color: #323232;
+    color: #e8e8e8;
   }
 
   .hero-content h2 {
@@ -1062,7 +1055,7 @@ footer {
     
   }
 
-  .hero-content p {
+  .hero-content h3 {
     font-size: 0.8rem;
     margin-bottom: 0.3rem;
     /* padding-top: 5px; */
@@ -1099,6 +1092,10 @@ footer {
    Adjust navigation for smaller screens
    ==================================== */  
 
+   .cta-button.margin-top {
+  margin-top: 170px; /* Adjust this value to move the button down */
+}
+
   nav {
     display: flex;
     /* Ensure it uses flexbox */
@@ -1109,6 +1106,10 @@ footer {
     padding: 0.2rem;
     height: 40px;
     /* Adjust this value to set a fixed height for the nav bar */
+  }
+
+  .nav-menu a {
+    font-family: Arial, Helvetica, sans-serif, Georgia;
   }
 
   /* Hides the horizontal menu on mobile */
@@ -1123,6 +1124,7 @@ footer {
     /* Stacks items vertically */
     background: #333;
     margin-top: 10%;
+    
   }
 
   /* JavaScript will add an 'active' class to show the menu */
@@ -1270,10 +1272,6 @@ footer {
     margin-bottom: 5%;
   }
 
-  /* .cta-button {
-    margin-top: 90%;
-    padding: 0;
-  } */
 
   /* Styles for the dropdown menu */
   .dropdown {
@@ -1313,16 +1311,6 @@ footer {
   }
     
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1406,12 +1394,12 @@ footer {
 .faq-section h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: white;
 }
 
 .faq-question {
     background-color: #f1f1f1;
-    color: #444;
+    color: #150c3a;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -1449,22 +1437,179 @@ footer {
 
 .contact-prompt h4 {
     font-size: 1.8rem;
-    color: #007bff;
+    color: #150c3a;
     margin-bottom: 1rem;
 }
 
 .contact-prompt p {
     font-size: 1rem;
-    color: #555;
+    color: #150c3a;
     margin-bottom: 2rem;
 }
 
+/* ==============================
+BODY SESSION 
+==================================*/
+/* ==============================
+HEADER
+==================================*/
+
 .nav-menu a {
-    color: black;
+    color: #150c3a;
+}
+
+.hero-content {
+    font-family: Arial, Helvetica, sans-serif, Georgia;
 }
 
 
+/* ==============================
+FOOTER SESSION
+==================================*/
+
+.fab.fa-whatsapp {
+    color: #150c3a;
+    /* font-size: 2rem; */
+}
 
 .bg-gray-50 {
-    background-color: #f9fafb;
+    background-color: #e8e8e8;
 }
+
+.fas.fa-envelope {
+    color: #150c3a;
+    
+} 
+
+.fas.fa-phone-alt {
+    color: #150c3a;
+}
+
+.fab.fa-whatsapp {
+    color: #150c3a;
+}
+
+.fab.fa-linkedin {
+    color: #150c3a;
+}
+
+.fas.fa-envelope:hover {
+    color: green;
+    
+} 
+
+.fas.fa-phone-alt:hover {
+    color: green;
+}
+
+.fab.fa-whatsapp:hover {
+    color: green;
+}
+
+.fab.fa-facebook-f:hover {
+    color: #00b324;
+}
+
+
+.fab.fa-instagram:hover {
+    color: #00b324;
+}
+
+.fab.fab.fa-linkedin:hover {
+    color: #00b324;
+}
+
+.fab.fab.fa-twitter:hover {
+    color: #00b324;
+}
+
+.fab.fa-youtube:hover {
+    color: #00b324;
+}
+
+.text-blue {
+    color: #150c3a;
+}
+
+
+
+
+.hero-subtitle {
+    color: #150c3a;
+}
+
+.dynamic-text {
+    color: #e8e8e8;
+}
+
+
+.cta-button {
+    background-color: #150c3a;
+    color: #e8e8e8;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;    
+}
+
+.cta-button:hover {
+    background-color: #00b324;
+}
+
+.cta-button.margin-top {
+  margin-top: 170px; /* Adjust this value to move the button down */
+}
+
+
+.service-content p {
+  color: white;
+}
+
+.section-title {
+  color: white;
+}
+
+.team-section .social-links .fab.fa-linkedin {
+    color: #150c3a;
+}
+
+.team-section .social-links .fab.fa-twitter {
+    color: #150c3a;
+}
+
+.team-section .social-links .fab.fa-github {
+    color: #150c3a;
+}
+
+.team-section .social-links .fab.fa-instagram {
+    color: #150c3a;
+}
+
+.team-section .social-links .fab.fa-facebook-f {
+    color: #150c3a;
+}
+
+.team-section .social-links .fab.fa-facebook-f:hover {
+    color: #00b324;
+}
+
+.team-section .social-links .fab.fa-github:hover {
+    color: #00b324;
+}
+
+.team-section .social-links .fab.fa-instagram:hover {
+    color: #00b324;
+}
+
+.team-section .social-links .fab.fab.fa-linkedin:hover {
+    color: #00b324;
+}
+
+.team-section .social-links .fab.fab.fa-twitter:hover {
+    color: #00b324;
+}
+
+
+
+/* SERVICE CARDS */

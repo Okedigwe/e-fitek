@@ -2,29 +2,76 @@
 <html lang="en">
 
 <head>
-    <style>
-        .async-hide {
-            opacity: 0 !important
+  <style>
+    .async-hide {
+      opacity: 0 !important
+    }
+
+    /* Custom styles for the fixed chat button */
+        .fixed-chat-button {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            background-color: rgba(200, 200, 200, 0.9);
+            /* Translucent grey */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            /* or use your preferred value */
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+            writing-mode: vertical-lr;
+            text-decoration: none;
+            text-orientation: mixed;
+            white-space: nowrap;
         }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-Fitek Digital Services offers innovative digital solutions for businesses.">
-    <meta name="keywords" content="software development, web hosting, digital training, E-Fitek, digital services">
-    <meta name="author" content="E-Fitek Digital Services">
-    <link rel="canonical" href="https://efitekk.vercel.app/">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
-    <title>E-Fitek Digital Services - Digital Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        .fixed-chat-button:hover {
+            background-color: rgba(235, 235, 235, 0.95);
+            /* Slightly darker translucent grey on hover */
+            transform: scale(1.05) translateY(-50%);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .text-black {
+            color: black;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .focus\:ring-opacity-50 {
+            --tw-ring-opacity: 0.5;
+            --tw-ring-color: rgb(59 130 246);
+            box-shadow: 0 0 0 3px var(--tw-ring-color / var(--tw-ring-opacity));
+        }
+
+        .fixed-chat-button:active {
+            transform: scale(0.95) translateY(-50%);
+        }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-Fitek Digital Services offers innovative digital solutions for businesses.">
+  <meta name="keywords" content="software development, web hosting, digital training, E-Fitek, digital services">
+  <meta name="author" content="E-Fitek Digital Services">
+  <link rel="canonical" href="https://efitekk.vercel.app/">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
+  <title>E-Fitek Digital Services - Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 
-  <body>
-    <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video>
-    
-    <header>
+<body>
+  <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video>
+  <a href="launch-chatbot-page.html"
+        class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+        Launch Voice Chatbot
+    </a>
+
+  <header class="bg-gray-50">
         <nav class="main-nav">
             <div class="logo">
                 <a href="index.html">
@@ -35,78 +82,75 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="text-black">Home</a></li>
+                <li><a href="about.html" class="text-black">About</a></li>
+                <li><a href="services.html" class="text-black">Services</a></li>
+                <li><a href="contact.html" class="text-black">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-      <section id="contact-form">
-        <h2>Get in Touch</h2>
-        <p>
-          Have a project in mind or a question for us? We'd love to hear from
-          you. Please fill out the form below, and we'll get back to you as soon
-          as possible.
-        </p>
+  <main>
+    <section id="contact-form">
+      <h2>Get in Touch</h2>
+      <p>
+        Have a project in mind or a question for us? We'd love to hear from
+        you. Please fill out the form below, and we'll get back to you as soon
+        as possible.
+      </p>
 
-        <form
-          action="https://formspree.io/f/xanbkdez"
-          method="POST"
-          class="contact-form"
-        >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+      <form action="https://formspree.io/f/xanbkdez" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
-      </section>
-    </main>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-        <footer>
-        <p">Contact us:</p>
-            <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt"></i></a></p>
-            <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope"></i></a></p>
-            <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
+  <footer class="bg-gray-50">
+    <p class="text-blue">Contact us:</p>
+    <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt text-blue"></i></a></p>
+    <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope text-blue"></i></a></p>
+    <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp text-blue"></i></a></p>
 
 
-            <div class="social-links">
-                <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter"></i></a>
+    <div class="social-links">
+      <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f text-blue"></i></a>
+      <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class="fab fa-linkedin text-blue"></i></a>
+      <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube text-blue"></i></a>
+      <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram text-blue"></i></a>
+      <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter text-blue"></i></a>
 
-            </div>
-            <p>&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
-    </footer>
+    </div>
+    <p class="text-blue">&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <button id="backToTopBtn" title="Go to top">^</button>
-    <script src="script.js"></script>
-  </body>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <button id="backToTopBtn" title="Go to top">^</button>
+  <script src="script.js"></script>
+</body>
+
 </html>

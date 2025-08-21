@@ -14,8 +14,10 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 1000;
-            background-color: rgba(200, 200, 200, 0.9); /* Translucent grey */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* or use your preferred value */
+            background-color: rgba(200, 200, 200, 0.9);
+            /* Translucent grey */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            /* or use your preferred value */
             transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
             writing-mode: vertical-lr;
             text-decoration: none;
@@ -64,9 +66,10 @@
 
 <body>
     <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video>
-    <a href="launch-chatbot-page.html" class="fixed-chat-button text-black font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-    Launch Voice Chatbot
-</a>
+    <a href="launch-chatbot-page.html"
+        class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+        Launch Voice Chatbot
+    </a>
 
     <header class="bg-gray-50">
         <nav class="main-nav">
@@ -88,8 +91,6 @@
     </header>
 
 
-
-
     <main>
 
         <section id="hero">
@@ -101,64 +102,17 @@
                 <img src="hero2.png" alt="Hero Image 3" class="hero-image" loading="lazy">
             </div>
             <div class="hero-content">
-                <a href="services.html" class="cta-button">Explore Our Services</a>
-            </div>    
-            </p>  
-
+                <a href="services.html" class="cta-button margin-top">Explore Our Services</a>
+            </div>
+            </p>
         </section>
-
-        <!-- <section id="hero">
-    <div class="hero-content-container">
-        
-        <div class="hero-content">
-            <h2>Innovative Digital Solutions for Your Business</h2>
-            <p>We develop, host, and train on software and websites to help you grow.</p>
-        </div>
-
-        
-        <div class="hero-content">
-            <h2>Boost Your Online Presence</h2>
-            <p>From stunning web design to powerful marketing campaigns, we've got you covered.</p>
-        </div>
-
-        
-        <div class="hero-content">
-            <h2>Grow Your Brand with Us</h2>
-            <p>Partner with our experts to build a stronger connection with your audience.</p>
-        </div>
-    </div>
-</section> -->
 
         <section id="hero">
-
             <div class="hero-content">
-                <h2>Innovative Digital Solutions for Your Business</h2>
-                <p>We develop, host, and train on software and websites to help you grow.</p>
-            </div>    
-            </p>  
+                <h2 class="text-gray">Innovative Digital Solutions for Your Business</h2>
+                <h3 class="text-gray">We develop, host, and train on software and websites to help you grow.</h3>
+            </div>
         </section>
-
-
-
-
-        <!-- <section>
-            <form class="hero-form">
-                <div class="form-group">
-                    <label for="full-name"><i class="fas fa-user"></i></label>
-                    <input type="text" id="full-name" placeholder="Full Name">
-                </div>
-                <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i></label>
-                    <input type="email" id="email" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <label for="phone"><i class="fas fa-phone"></i></label>
-                    <input type="tel" id="phone" placeholder="Phone Number">
-                </div>
-                <button type="submit" class="cta-button get-started-btn"> <a href="contact.html#contact-form">Get Started</a></button>                
-            </form>
-        </section> -->
-
 
         <!-- <section id="about-us-photos">
             <h3 class="card fade-in">Meet the Team</h3>
@@ -268,67 +222,69 @@
 
         </div>
 
-        <section id="roadmap-section" class="card fade-in">
-            <h2>Our Project Roadmap</h2>
-            <div class="roadmap-container">
-                <div class="roadmap-item">
-                    <div class="roadmap-progress-bar">
-                        <div class="roadmap-progress" style="width: 85%;"></div>
-                    </div>
-                    <div class="roadmap-details">
-                        <h3>Website Redesign</h3>
-                        <p>Status: In Progress</p>
-                        <span>85% Complete</span>
-                    </div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-progress-bar">
-                        <div class="roadmap-progress" style="width: 100%;"></div>
-                    </div>
-                    <div class="roadmap-details">
-                        <h3>Mobile App Development</h3>
-                        <p>Status: Completed</p>
-                        <span>100% Complete</span>
-                    </div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-progress-bar">
-                        <div class="roadmap-progress" style="width: 40%;"></div>
-                    </div>
-                    <div class="roadmap-details">
-                        <h3>Digital Marketing Campaign</h3>
-                        <p>Status: Planning</p>
-                        <span>40% Complete</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="blog-section">
-            <h2>Featured Articles</h2>
-            <div class="blog-articles-container">
-                <div class="blog-article card fade-in">
-                    <img src="blog-image1.png" alt="Blog post image" class="blog-image">
-                    <div class="article-content">
-                        <h3>The Future of AI in Web Development</h3>
-                        <p>Explore how artificial intelligence is changing the landscape of software and web creation,
-                            making processes more efficient and intuitive.</p>
-                        <a href="https://efitekblog.blogspot.com/2025/08/the-future-of-ai-in-web-development.html"
-                            class="cta-button read-more-btn">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-article card fade-in">
-                    <img src="blog-image.png" alt="Blog post image" class="blog-image">
-                    <div class="article-content">
-                        <h3>Essential SEO Tips for 2025</h3>
-                        <p>Stay ahead of the competition with our top tips for optimizing your website to rank higher in
-                            search engine results and attract more traffic.</p>
-                        <a href="https://efitekblog.blogspot.com/2025/08/essential-seo-tips-for-2025-stay-ahead.html"
-                            class="cta-button read-more-btn">Read More</a>
-                    </div>
-                </div>
+        <section id="roadmap-section" class="card fade-in" style="background-color: rgba(255, 255, 255, 0.1);">
+    <h2 class="text-white">Our Project Roadmap</h2>
+    <div class="roadmap-container card fade-in" style="background-color: rgba(255, 255, 255, 0.1);">
+        <div class="roadmap-item">
+            <div class="roadmap-progress-bar">
+                <div class="roadmap-progress" style="width: 85%;"></div>
             </div>
-        </section>
+            <div class="roadmap-details card fade-in">
+                <h3>Website Redesign</h3>
+                <p>Status: In Progress</p>
+                <span>85% Complete</span>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <div class="roadmap-progress-bar">
+                <div class="roadmap-progress" style="width: 100%;"></div>
+            </div>
+            <div class="roadmap-details bg-gray">
+                <h3>Mobile App Development</h3>
+                <p>Status: Completed</p>
+                <span>20% Complete</span>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <div class="roadmap-progress-bar">
+                <div class="roadmap-progress" style="width: 40%;"></div>
+            </div>
+            <div class="roadmap-details">
+                <h3>Digital Marketing Campaign</h3>
+                <p>Status: Planning</p>
+                <span>40% Complete</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="blog-section" style="background-color: rgba(255, 255, 255, 0);">
+    <h2 class="text-white">Featured Articles</h2>
+    <div class="blog-articles-container">
+        <div class="blog-article card fade-in">
+            <img src="blog-image1.png" alt="Blog post image" class="blog-image">
+            <div class="article-content">
+                <h3 class="text-white">The Future of AI in Web Development</h3>
+                <p>Explore how artificial intelligence is changing the landscape of software and web creation,
+                    making processes more efficient and intuitive.</p>
+                <a href="https://efitekblog.blogspot.com/2025/08/the-future-of-ai-in-web-development.html"
+                    class="cta-button read-more-btn">Read More</a>
+            </div>
+        </div>
+        <div class="blog-article card fade-in">
+            <img src="blog-image.png" alt="Blog post image" class="blog-image">
+            <div class="article-content">
+                <h3 class="text-white">Essential SEO Tips for 2025</h3>
+                <p>Stay ahead of the competition with our top tips for optimizing your website to rank higher in
+                    search engine results and attract more traffic.</p>
+                <a href="https://efitekblog.blogspot.com/2025/08/essential-seo-tips-for-2025-stay-ahead.html"
+                    class="cta-button read-more-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
         <section class="full-width-image-section">
@@ -337,63 +293,39 @@
             </div>
         </section>
 
-        <section id="services-overview" class="card fade-in">
+        <section id="services-overview" class="card fade-in text-white">
             <h3>What We Do</h3>
             <p>At E-Fitek Digital Services, we specialize in providing comprehensive digital solutions that empower your
                 business. From custom software development to reliable web hosting and expert digital training, we are
                 here to support your growth.</p>
         </section>
 
-        <section id="about" class="card fade-in">
+        <section id="about" class="card fade-in text-white">
             <h3>About Us</h3>
             <p>We are a team of passionate developers, designers, and digital strategists committed to turning your
                 ideas into reality. Our expertise spans across software development, web hosting, and providing
                 comprehensive training to empower you and your team.</p>
-        </section>
-
-
-        <!-- <section id="services-list">
-            <h3 class="card fade-in">Our Services</h3>
-            <div class="service-item">
-                <img src="software-development-icon1.png" alt="Software development icon"
-                    class="service-icon card fade-in" loading="lazy">
-                <img src="software-development-icon2.png" alt="Software development icon"
-                    class="service-icon card fade-in" loading="lazy">
-        </section>
-        <section id="software-development">
-            <div class="card fade-in">
-                <h4>Software Development</h4>
-                <p>We build custom software and applications tailored to your business needs.</p>
-            </div>
-            </div>
-        </section>
-
-        <div class="service-item card fade-in">
-            <img src="website-hosting-icon.png" alt="Website hosting icon" class="service-icon card fade-in"
-                loading="lazy">
-            <h4 id="website-hosting">Website Hosting</h4>
-            <p>Reliable and secure hosting solutions to keep your online presence live.</p>
-        </div>
-        </section> -->
+        </section>        
 
     </main>
 
-    <footer>
-        <p">Contact us:</p>
-            <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt"></i></a></p>
-            <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope"></i></a></p>
-            <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
+    <footer class="bg-gray-50">
+        <p class="text-blue">Contact us:</p>
+        <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt text-blue"></i></a></p>
+        <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope text-blue"></i></a></p>
+        <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp text-blue"></i></a></p>
 
 
-            <div class="social-links">
-                <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="social-links">
+            <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f text-blue"></i></a>
+            <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i
+                    class="fab fa-linkedin text-blue"></i></a>
+            <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube text-blue"></i></a>
+            <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram text-blue"></i></a>
+            <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter text-blue"></i></a>
 
-            </div>
-            <p>&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
+        </div>
+        <p class="text-blue">&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
     </footer>
 
 
