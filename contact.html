@@ -8,47 +8,49 @@
     }
 
     /* Custom styles for the fixed chat button */
-        .fixed-chat-button {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1000;
-            background-color: rgba(200, 200, 200, 0.9);
-            /* Translucent grey */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-            /* or use your preferred value */
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-            writing-mode: vertical-lr;
-            text-decoration: none;
-            text-orientation: mixed;
-            white-space: nowrap;
-        }
+    .fixed-chat-button {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background-color: rgba(200, 200, 200, 0.9);
+      /* Translucent grey */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      /* or use your preferred value */
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+      writing-mode: vertical-lr;
+      text-decoration: none;
+      text-orientation: mixed;
+      white-space: nowrap;
+    }
 
-        .fixed-chat-button:hover {
-            background-color: rgba(235, 235, 235, 0.95);
-            /* Slightly darker translucent grey on hover */
-            transform: scale(1.05) translateY(-50%);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
+    .fixed-chat-button:hover {
+      background-color: rgba(235, 235, 235, 0.95);
+      /* Slightly darker translucent grey on hover */
+      transform: scale(1.05) translateY(-50%);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
 
-        .text-black {
-            color: black;
-        }
+    .text-black {
+      color: black;
+    }
 
-        .rounded-full {
-            border-radius: 9999px;
-        }
+    .rounded-full {
+      border-radius: 9999px;
+    }
 
-        .focus\:ring-opacity-50 {
-            --tw-ring-opacity: 0.5;
-            --tw-ring-color: rgb(59 130 246);
-            box-shadow: 0 0 0 3px var(--tw-ring-color / var(--tw-ring-opacity));
-        }
+    .focus\:ring-opacity-50 {
+      --tw-ring-opacity: 0.5;
+      --tw-ring-color: rgb(59 130 246);
+      box-shadow: 0 0 0 3px var(--tw-ring-color / var(--tw-ring-opacity));
+    }
 
-        .fixed-chat-button:active {
-            transform: scale(0.95) translateY(-50%);
-        }
+    .fixed-chat-button:active {
+      transform: scale(0.95) translateY(-50%);
+    }
+
+        
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,30 +67,33 @@
 
 
 <body>
-  <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video>
+  <!-- <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video> -->
+  <div class="watermark-container">
+        <img class="watermark-image" src="bg3.png" alt="Watermark image">
+    </div>
   <a href="launch-chatbot-page.html"
-        class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-        Launch Voice Chatbot
-    </a>
+    class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+    Launch Voice Chatbot
+  </a>
 
   <header class="bg-gray-50">
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="text-black">Home</a></li>
-                <li><a href="about.html" class="text-black">About</a></li>
-                <li><a href="services.html" class="text-black">Services</a></li>
-                <li><a href="contact.html" class="text-black">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="text-black">Home</a></li>
+        <li><a href="about.html" class="text-black">About</a></li>
+        <li><a href="services.html" class="text-black">Services</a></li>
+        <li><a href="contact.html" class="text-black">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section id="contact-form">
@@ -115,25 +120,24 @@
   </main>
 
   <footer class="bg-gray-50">
-    <p class="text-blue">Contact us:</p>
-    <p><a href="tel:+2348167712361"><i class="fas fa-phone-alt text-blue"></i></a></p>
-    <p><a href="mailto:kingsleyokedigwe@gmail.com"><i class="fas fa-envelope text-blue"></i></a></p>
+    <p class="text-blue" target="_blank">Contact us:</p>
+    <p><a href="tel:+2348167712361" target="_blank"><i class="fas fa-phone-alt text-blue"></i></a></p>
+    <p><a href="mailto:kingsleyokedigwe@gmail.com" target="_blank"><i class="fas fa-envelope text-blue"></i></a></p>
     <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp text-blue"></i></a></p>
-
 
     <div class="social-links">
       <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f text-blue"></i></a>
-      <a href=" https://www.linkedin.com/company/efitekk/" target="_blank"><i class="fab fa-linkedin text-blue"></i></a>
+      <a href=" https://www.linkedin.com/company/efitekk/"><i class="fab fa-linkedin text-blue"></i></a>
       <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube text-blue"></i></a>
       <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram text-blue"></i></a>
       <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter text-blue"></i></a>
+    </div>
 
     </div>
     <p class="text-blue">&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
-
+  
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
