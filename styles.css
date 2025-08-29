@@ -1122,7 +1122,7 @@ footer {
     width: 100%;
     flex-direction: column;
     /* Stacks items vertically */
-    background: #333;
+    background: hwb(0 100% 0%);
     margin-top: 10%;
     
   }
@@ -1149,7 +1149,7 @@ footer {
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: #333;
+    background: #ffffff;
     margin-top: -10%;
     /* Reduces the gap from the top */
   }
@@ -1217,19 +1217,19 @@ footer {
     flex-direction: column;
     /* Stack menu items vertically */
     width: 100%;
-    text-align: center;
+    text-align: center !important;
     position: absolute;
-    top: 80px;
+    top: 20px;
     /* Adjust based on your header height */
     left: 0;
-    background-color: #333;
+    background-color:#e8e8e8;
     /* A background color for the mobile menu */
   }
      
   /* The JavaScript will add a class to show the menu */
-  .main-nav.active ul {
+  /* .main-nav.active ul {
     display: flex;
-  }
+  } */
 
   /* Show the menu toggle button on mobile screens */
   .menu-toggle {
@@ -1291,8 +1291,10 @@ footer {
     /* Ensures it spans the width of the parent */
   }
 
+
   .dropdown.active .dropdown-menu {
     display: block;
+
   }
 
   .dropdown:hover .dropdown-menu {
@@ -1308,6 +1310,11 @@ footer {
   .team-grid {
     grid-template-columns: 1fr;
     gap: 30px;    
+  }
+
+  .main-nav.nav-menu {
+    text-align: center !important;
+    
   }
     
 }
@@ -1664,3 +1671,4 @@ FOOTER SESSION
         }
 
       
+        
