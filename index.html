@@ -1,381 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-NG" class="no-js">
 <head>
-    <style>
-        .async-hide {
-            opacity: 0 !important
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design, SEO & Digital Marketing Agency in Nigeria | E-Fitek</title>
+<meta name="description" content="E-Fitek builds fast websites, custom software and SEO, ads and social media campaigns that win Nigerian businesses more customers. Free consultation.">
+<link rel="canonical" href="https://e-fitek.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#060a1f">
 
-        /* Custom styles for the fixed chat button */
-        .fixed-chat-button {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1000;
-            background-color: rgba(200, 200, 200, 0.9);
-            /* Translucent grey */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-            /* or use your preferred value */
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-            writing-mode: vertical-lr;
-            text-decoration: none;
-            text-orientation: mixed;
-            white-space: nowrap;
-        }
-
-        .fixed-chat-button:hover {
-            background-color: rgba(235, 235, 235, 0.95);
-            /* Slightly darker translucent grey on hover */
-            transform: scale(1.05) translateY(-50%);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .text-black {
-            color: black;
-        }
-
-        .rounded-full {
-            border-radius: 9999px;
-        }
-
-        .focus\:ring-opacity-50 {
-            --tw-ring-opacity: 0.5;
-            --tw-ring-color: rgb(59 130 246);
-            box-shadow: 0 0 0 3px var(--tw-ring-color / var(--tw-ring-opacity));
-        }
-
-        .fixed-chat-button:active {
-            transform: scale(0.95) translateY(-50%);
-        }
-
-        
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-Fitek Digital Services offers innovative digital solutions for businesses.">
-    <meta name="keywords" content="software development, web hosting, digital training, E-Fitek, digital services">
-    <meta name="author" content="E-Fitek Digital Services">
-    <link rel="canonical" href="https://efitekk.vercel.app/">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
-    <title>E-Fitek Digital Services - Digital Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="E-Fitek Digital Services">
+<meta property="og:title" content="Web Design, SEO & Digital Marketing Agency in Nigeria | E-Fitek">
+<meta property="og:description" content="E-Fitek builds fast websites, custom software and SEO, ads and social media campaigns that win Nigerian businesses more customers. Free consultation.">
+<meta property="og:url" content="https://e-fitek.vercel.app/">
+<meta property="og:image" content="https://e-fitek.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@e_fitek">
+<meta name="twitter:title" content="Web Design, SEO & Digital Marketing Agency in Nigeria | E-Fitek">
+<meta name="twitter:description" content="E-Fitek builds fast websites, custom software and SEO, ads and social media campaigns that win Nigerian businesses more customers. Free consultation.">
+<meta name="twitter:image" content="https://e-fitek.vercel.app/og-image.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="/assets/css/main.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://e-fitek.vercel.app/#organization", "name": "E-Fitek Digital Services", "alternateName": "E-Fitek", "url": "https://e-fitek.vercel.app/", "logo": "https://e-fitek.vercel.app/icon-512.png", "image": "https://e-fitek.vercel.app/og-image.jpg", "description": "Web design, software development, SEO, paid ads, email & SMS and social media marketing for growing businesses.", "telephone": "+2348167712361", "email": "kingsleyokedigwe@gmail.com", "address": {"@type": "PostalAddress", "addressCountry": "NG"}, "areaServed": ["Nigeria", "Africa", "Worldwide"], "priceRange": "₦₦", "sameAs": ["https://web.facebook.com/efitekk", "https://www.linkedin.com/company/efitekk/", "https://www.instagram.com/e_fitek/", "https://www.youtube.com/@e-fitekk", "https://x.com/e_fitek"], "knowsAbout": ["Web design", "Search engine optimisation", "Pay-per-click advertising", "Social media marketing", "Email marketing", "SAP BTP", "SAP Integration Suite"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://e-fitek.vercel.app/#website", "url": "https://e-fitek.vercel.app/", "name": "E-Fitek Digital Services", "publisher": {"@id": "https://e-fitek.vercel.app/#organization"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on scope — a focused business website costs far less than a custom e-commerce platform. Tell us what you need and we'll send a clear, fixed quote within one business day."}}, {"@type": "Question", "name": "Do you work with businesses outside Nigeria?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work remotely with clients across Africa, the UK, the US and beyond, using video calls, shared project boards and WhatsApp for quick updates."}}, {"@type": "Question", "name": "Will my website be mobile-friendly and SEO-ready?", "acceptedAnswer": {"@type": "Answer", "text": "Always. Every site we build is mobile-first, fast-loading and structured for search engines, with analytics set up from day one."}}, {"@type": "Question", "name": "Can you manage my marketing after launch?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many clients keep us on for SEO, ads, social media and email so there's one team accountable for growth."}}, {"@type": "Question", "name": "How do we get started?", "acceptedAnswer": {"@type": "Answer", "text": "Book a free consultation or send us a WhatsApp message. We'll learn about your goals, recommend an approach and send a proposal — no obligation."}}]}</script>
 
 </head>
-
 <body>
-    <!-- <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video> -->
-     <div class="watermark-container">
-        <img class="watermark-image" src="bg3.png" alt="Watermark image">
-    </div>
-    <a href="launch-chatbot-page.html" target="_blank"
-        class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-        Launch Voice Chatbot
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="E-Fitek Digital Services — home">
+      <img src="/assets/img/logo-mark-light.png" alt="" width="141" height="156">
+      <span class="brand-name">E-FITEK<small>DIGITAL SERVICES</small></span>
     </a>
-
-    <header class="bg-gray-50">
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="text-black">Home</a></li>
-                <li><a href="about.html" class="text-black">About</a></li>
-                <li><a href="services.html" class="text-black">Services</a></li>
-                <li><a href="contact.html" class="text-black">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <section id="hero">
-            <p class="hero-subtitle">We are passionate about <span id="dynamic-words" class="dynamic-text"></span>
-            <div class="hero-slides">
-                <img src="hero.png" alt="Team collaborating in modern office" class="hero-image active-slide"
-                    loading="lazy">
-                <img src="hero1.png" alt="Hero Image 2" class="hero-image" loading="lazy">
-                <img src="hero2.png" alt="Hero Image 3" class="hero-image" loading="lazy">
-            </div>
-            <div class="hero-content">
-                <a href="services.html" class="cta-button margin-top">Explore Our Services</a>
-            </div>
-            </p>
-        </section>
-
-        <section id="hero">
-            <div class="hero-content">
-                <h2 class="text-gray">Innovative Digital Solutions for Your Business</h2>
-                <h3 class="text-gray">We develop, host, and train on software and websites to help you grow.</h3>
-            </div>
-        </section>
-
-        <!-- <section id="about-us-photos">
-            <h3 class="card fade-in">Meet the Team</h3>
-            <div class="team-photo">
-                <img src="team-member-headshot1.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>
-                        Okedigwe Kingsley <br>
-                        Full-Stack Software Developer
-                    </strong></p><br>
-                <p><strong>Specializations</strong> <br>
-                    <strong>SAP:</strong> Technical Consultant, ABAP Developer Associate, SAP BTP, SAP CPI <br>
-                    <strong>Web Development:</strong> JavaScript (Node.js, Express), Ruby <br>
-                    <strong>Scripting:</strong> Python, Shell Scripting (Bash/Batch) <br>
-                    <strong>Foundational Skills:</strong> HTML, CSS <br>
-                </p>
-
-                <img src="team-member-headshot5.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>
-                        Nonia Madisa <br>
-                        Software Developer Associate/Customer Support
-                    </strong></p><br>
-
-                <img src="team-member-headshot2.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>Ikechukwu Austin</strong>
-                <p>BSc. Computer Science, Software Developer Associate</p>
-                <img src="team-member-headshot3.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>
-                        Engr. Majed Juhi <br>
-                        Front-End Software Engineer
-                    </strong></p><br>
-                <p><strong>Specializations</strong> <br>
-                    <strong>SAP:</strong> Senior SAP Technical Consultant - Integration Suite, SAP CPI, SAP BTP <br>
-                    <strong>Web Development:</strong> JavaScript (Node.js, Express, React), Ruby <br>
-                    <strong>Scripting:</strong> Python <br>
-                    <strong>Foundational Skills:</strong> HTML, CSS <br>
-                </p>
-                <img src="team-member-headshot4.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>
-                        Walter Ebuka .O. <br>
-                        Back-End Software Developer
-                    </strong></p><br>
-                <p><strong>Specializations</strong> <br>
-                    <strong>SAP:</strong> SAP Functional Consultant - SAP Customer Support Associate<br>
-                    <strong>Web Development:</strong> C#, JavaScript (Node.js, Express)<br>
-                    <strong>Scripting:</strong> Python<br>
-                    <strong>Foundational Skills:</strong> SQL <br>
-                </p>
-
-                <img src="team-member-headshot6.png" alt="Headshot of a team member" class="headshot-img card fade-in"
-                    loading="lazy">
-                <p><strong>
-                        Bobai Nuhu <br>
-                        MBA. SAP Functional Consultant Associate
-                    </strong></p><br>
-                <p><strong>Specializations</strong> <br>
-                    <strong>SAP:</strong>SAP Functional Supply Chain and Logistics Consultant, FICO <br>
-                    <strong>Sales:</strong> Sales Cloud Consultant<br>
-                </p>
-            </div>
-        </section> -->
-
-
-        <div class="service-cards-container">
-
-            <div class="service-card">
-
-                <img src="web-design-icon.png" alt="Web Design" class="service-icon" loading="lazy">
-                <h3 class="card-title">Web Design</h3>
-                <p class="card-description">Create a brand and design to express your unique value proposition.</p>
-                <a href="services.html#web-design-details" class="cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <img src="seo-icon.png" alt="SEO" class="service-icon" loading="lazy">
-                <h3 class="card-title">SEO</h3>
-                <p class="card-description">Boost your online visibility with strategic search engine optimization.</p>
-                <a href="services.html#seo-details" class="cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <img src="ppc-icon.png" alt="PPC" class="service-icon" loading="lazy">
-                <h3 class="card-title">PPC</h3>
-                <p class="card-description">Drive immediate results with targeted pay-per-click advertising campaigns.
-                </p>
-                <a href="services.html#ppc-details" class="cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <img src="email-icon.png" alt="Emails & SMS" class="service-icon" loading="lazy">
-                <h3 class="card-title">Emails & SMS</h3>
-                <p class="card-description">Engage your audience directly through effective email and SMS campaigns.</p>
-                <a href="services.html#email-details" class="cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <img src="social-icon.png" alt="Social Media" class="service-icon" loading="lazy">
-                <h3 class="card-title">Social Media</h3>
-                <p class="card-description">Build a strong brand presence and connect with your customers on social
-                    media.</p>
-                <a href="services.html#socials-details" class="cta-button">Learn More</a>
-            </div>
-
-        </div>
-
-
-        <section id="roadmap-section" class="card fade-in" style="background-color: rgba(255, 255, 255, 0.1);">
-    <h2 class="text-white">Our Project Roadmap</h2>
-    <div class="roadmap-container card fade-in" style="background-color: rgba(255, 255, 255, 0.1);">
-        <div class="roadmap-item">
-            <div class="roadmap-progress-bar">
-                <div class="roadmap-progress" style="width: 85%;"></div>
-            </div>
-            <div class="roadmap-details card fade-in">
-                <h3>Website Redesign</h3>
-                <p>Status: In Progress</p>
-                <span>85% Complete</span>
-            </div>
-        </div>
-        <div class="roadmap-item">
-            <div class="roadmap-progress-bar">
-                <div class="roadmap-progress" style="width: 100%;"></div>
-            </div>
-            <div class="roadmap-details bg-gray">
-                <h3>Mobile App Development</h3>
-                <p>Status: Completed</p>
-                <span>20% Complete</span>
-            </div>
-        </div>
-        <div class="roadmap-item">
-            <div class="roadmap-progress-bar">
-                <div class="roadmap-progress" style="width: 40%;"></div>
-            </div>
-            <div class="roadmap-details">
-                <h3>Digital Marketing Campaign</h3>
-                <p>Status: Planning</p>
-                <span>40% Complete</span>
-            </div>
-        </div>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links"><li><a href="/" aria-current="page">Home</a></li><li><a href="/services">Services</a></li><li><a href="/about">About</a></li><li><a href="https://efitekblog.blogspot.com" target="_blank" rel="noopener">Insights</a></li><li><a href="/contact">Contact</a></li>
+        <li class="mobile-cta"><a class="btn btn-primary" href="/contact">Book a free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="/contact">Free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon i-open" aria-hidden="true"><use href="/assets/icons.svg#i-menu"></use></svg><svg class="icon i-close" aria-hidden="true"><use href="/assets/icons.svg#i-x"></use></svg>
+      </button>
     </div>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge-pill"><b>NEW</b> Talk to our AI voice assistant — 24/7</span>
+      <h1 class="h-display">We build digital <br>experiences that <span class="rotator grad-text" aria-live="polite">
+        <span class="is-active">sell.</span><span>scale.</span><span>convert.</span><span>rank.</span><span>inspire.</span></span></h1>
+      <p class="lead">Websites, software and marketing that turn attention into revenue. E-Fitek is the Nigerian digital team that designs, builds, hosts and grows your brand — end to end.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contact">Book a free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a>
+        <a class="btn btn-ghost" href="/services">Explore services</a>
+      </div>
+      <ul class="hero-proof">
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-circle-check-big"></use></svg> Reply within 1 business day</li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-circle-check-big"></use></svg> Fixed, transparent quotes</li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-circle-check-big"></use></svg> SAP-skilled engineers</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="ring"></div>
+      <div class="frame f1"><img src="/assets/img/hero-team.webp" alt="E-Fitek team collaborating on a client strategy" width="787" height="433" fetchpriority="high" decoding="async"></div>
+      <div class="frame f2"><img src="/assets/img/office.webp" alt="Modern open-plan office workspace" width="709" height="379" loading="lazy" decoding="async"></div>
+      <div class="float-card c1"><div class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-trending-up"></use></svg></div><div><b>More leads</b><span>SEO + ads, tracked end-to-end</span></div><div class="spark" aria-hidden="true"><i style="height:40%"></i><i style="height:55%;animation-delay:.2s"></i><i style="height:48%;animation-delay:.4s"></i><i style="height:75%;animation-delay:.6s"></i><i style="height:100%;animation-delay:.8s"></i></div></div>
+      <div class="float-card c2"><div class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"></use></svg></div><div><b>Built for speed</b><span>Mobile-first · Core Web Vitals</span></div></div>
+    </div>
+  </div>
 </section>
 
+<div class="marquee-wrap" aria-label="Technologies and platforms we work with">
+  <p class="marquee-label">Platforms &amp; technologies we work with</p>
+  <div class="marquee"><div class="marquee-track"><span>SAP BTP</span><span>SAP Integration Suite</span><span>React</span><span>Node.js</span><span>Python</span><span>Next.js</span><span>WordPress</span><span>Shopify</span><span>Google Ads</span><span>Meta Ads</span><span>Google Analytics 4</span><span>Mailchimp</span><span>Paystack</span><span>Flutterwave</span><span>Vercel</span><span>SAP BTP</span><span>SAP Integration Suite</span><span>React</span><span>Node.js</span><span>Python</span><span>Next.js</span><span>WordPress</span><span>Shopify</span><span>Google Ads</span><span>Meta Ads</span><span>Google Analytics 4</span><span>Mailchimp</span><span>Paystack</span><span>Flutterwave</span><span>Vercel</span></div></div>
+</div>
 
-<section id="blog-section" style="background-color: rgba(255, 255, 255, 0);">
-    <h2 class="text-white">Featured Articles</h2>
-    <div class="blog-articles-container">
-        <div class="blog-article card fade-in">
-            <img src="blog-image1.png" alt="Blog post image" class="blog-image">
-            <div class="article-content">
-                <h3 class="text-white">The Future of AI in Web Development</h3>
-                <p>Explore how artificial intelligence is changing the landscape of software and web creation,
-                    making processes more efficient and intuitive.</p>
-                <a href="https://efitekblog.blogspot.com/2025/08/the-future-of-ai-in-web-development.html"
-                    class="cta-button read-more-btn">Read More</a>
-            </div>
-        </div>
-        <div class="blog-article card fade-in">
-            <img src="blog-image.png" alt="Blog post image" class="blog-image">
-            <div class="article-content">
-                <h3 class="text-white">Essential SEO Tips for 2025</h3>
-                <p>Stay ahead of the competition with our top tips for optimizing your website to rank higher in
-                    search engine results and attract more traffic.</p>
-                <a href="https://efitekblog.blogspot.com/2025/08/essential-seo-tips-for-2025-stay-ahead.html"
-                    class="cta-button read-more-btn">Read More</a>
-            </div>
-        </div>
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2 class="h-1">Everything you need to win online — under one roof.</h2>
+      <p class="lead">From your first website to a full-funnel marketing engine and enterprise integrations, one accountable team handles strategy, design, build and growth.</p>
     </div>
+    <div class="grid services-grid"><article class="svc-card reveal featured" data-delay="1">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-code-xml"></use></svg></div>
+  <h3>Web Design & Development</h3>
+  <p>Fast, conversion-focused websites and online stores that make your brand look world-class on every screen.</p>
+  <div class="tags"><span class="tag">Business sites</span><span class="tag">E-commerce</span><span class="tag">Landing pages</span></div>
+  <a class="link-arrow" href="/services#web-design">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article><article class="svc-card reveal" data-delay="2">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-workflow"></use></svg></div>
+  <h3>Custom Software & SAP Integration</h3>
+  <p>Web apps, automations and SAP BTP / Integration Suite work that connect your systems and remove manual effort.</p>
+  <div class="tags"><span class="tag">SAP BTP</span><span class="tag">SAP CPI</span><span class="tag">APIs</span><span class="tag">Automation</span></div>
+  <a class="link-arrow" href="/services#software">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article><article class="svc-card reveal" data-delay="3">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-search"></use></svg></div>
+  <h3>Search Engine Optimisation</h3>
+  <p>Get found on Google by the customers already searching for what you sell — and win the clicks that matter.</p>
+  <div class="tags"><span class="tag">Technical SEO</span><span class="tag">Local SEO</span><span class="tag">Content</span></div>
+  <a class="link-arrow" href="/services#seo">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article><article class="svc-card reveal" data-delay="1">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-target"></use></svg></div>
+  <h3>Paid Ads (PPC)</h3>
+  <p>Google, Meta and TikTok campaigns built to generate leads and sales from day one — with every naira tracked.</p>
+  <div class="tags"><span class="tag">Google Ads</span><span class="tag">Meta Ads</span><span class="tag">Retargeting</span></div>
+  <a class="link-arrow" href="/services#ppc">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article><article class="svc-card reveal" data-delay="2">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg></div>
+  <h3>Email & SMS Marketing</h3>
+  <p>Automated sequences, newsletters and SMS campaigns that nurture leads and bring customers back to buy again.</p>
+  <div class="tags"><span class="tag">Automation</span><span class="tag">Newsletters</span><span class="tag">Bulk SMS</span></div>
+  <a class="link-arrow" href="/services#email-sms">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article><article class="svc-card reveal" data-delay="3">
+  <div class="svc-ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-megaphone"></use></svg></div>
+  <h3>Social Media Management</h3>
+  <p>Scroll-stopping content, community management and paid social that grow a brand people trust and buy from.</p>
+  <div class="tags"><span class="tag">Content</span><span class="tag">Community</span><span class="tag">Strategy</span></div>
+  <a class="link-arrow" href="/services#social-media">Explore service <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+</article></div>
+  </div>
 </section>
 
+<section class="section section--tint">
+  <div class="container split">
+    <div class="media-stack reveal">
+      <div class="main"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1200&q=78" srcset="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=480&q=78 480w, https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=800&q=78 800w, https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1200&q=78 1200w, https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1600&q=78 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Team of professionals planning a digital project around a table with laptops" loading="lazy" decoding="async" data-fallback="/assets/img/hero-strategy.webp"></div>
+      <div class="inset"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=78" srcset="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=480&q=78 480w, https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=78 800w" sizes="(max-width: 900px) 100vw, 50vw" alt="Two developers reviewing code on a monitor" loading="lazy" decoding="async" data-fallback="/assets/img/hero-workshop.webp"></div>
+      <div class="chip"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-shield-check"></use></svg> One accountable team</div>
+    </div>
+    <div class="reveal" data-delay="1">
+      <span class="eyebrow">Why E-Fitek</span>
+      <h2 class="h-1">Strategy, engineering and marketing that work together.</h2>
+      <p class="lead">Most businesses juggle a designer, a developer and a marketer who never talk. We bring them into one team focused on a single number: your growth.</p>
+      <ul class="checklist">
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Built to convert, not just to look good</b><span>Every page is designed around a clear action — call, WhatsApp, buy or book.</span></div></li>
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Enterprise-grade engineering</b><span>Our SAP and full-stack engineers bring corporate-level quality to businesses of every size.</span></div></li>
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Measured and transparent</b><span>Analytics and conversion tracking from day one, with plain-English monthly reports.</span></div></li>
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Local insight, global standard</b><span>We understand Nigerian customers, payments and platforms — and build to international standards.</span></div></li>
+      </ul>
+      <a class="btn btn-dark" href="/about">Meet the team <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a>
+    </div>
+  </div>
+</section>
 
-        <section class="full-width-image-section">
-            <div class="office-photo-container">
-                <img src="office-space.png" alt="Our modern office space" class="office-photo" loading="lazy">
-            </div>
-        </section>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How we work</span>
+      <h2 class="h-1" style="color:#fff">From first call to measurable growth in four steps.</h2>
+      <p class="lead">A clear, collaborative process — so you always know what's happening, what's next and what it costs.</p>
+    </div>
+    <div class="grid process">
+      <div class="step reveal" data-delay="1"><h3>Discover</h3><p>A free consultation to understand your business, customers, competitors and goals.</p></div>
+      <div class="step reveal" data-delay="2"><h3>Plan &amp; design</h3><p>A fixed proposal, sitemap and design concepts you approve before a line of code is written.</p></div>
+      <div class="step reveal" data-delay="3"><h3>Build &amp; launch</h3><p>We develop, test on every device, set up tracking and launch with zero downtime.</p></div>
+      <div class="step reveal" data-delay="4"><h3>Grow</h3><p>SEO, ads, social and email campaigns — optimised monthly against real business results.</p></div>
+    </div>
+  </div>
+</section>
 
-        <section id="services-overview" class="card fade-in text-white">
-            <h3>What We Do</h3>
-            <p>At E-Fitek Digital Services, we specialize in providing comprehensive digital solutions that empower your
-                business. From custom software development to reliable web hosting and expert digital training, we are
-                here to support your growth.</p>
-        </section>
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;max-width:none">
+      <div style="max-width:640px"><span class="eyebrow">Insights</span><h2 class="h-1" style="margin:0">Ideas to help your business grow.</h2></div>
+      <a class="btn btn-outline" href="https://efitekblog.blogspot.com" target="_blank" rel="noopener">View all articles <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+    </div>
+    <div class="grid posts">
+      <a class="post reveal" data-delay="1" href="https://efitekblog.blogspot.com/2025/08/the-future-of-ai-in-web-development.html" target="_blank" rel="noopener">
+        <div class="post-img"><img src="/assets/img/blog-ai.webp" alt="Developer working with AI-assisted coding tools" width="800" height="800" loading="lazy" decoding="async"></div>
+        <div class="post-body"><div class="post-meta"><span class="tag">AI &amp; Development</span></div>
+        <h3>The Future of AI in Web Development</h3><p>How artificial intelligence is changing the way software and websites are designed, built and maintained.</p>
+        <span class="link-arrow">Read article <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></span></div></a>
+      <a class="post reveal" data-delay="2" href="https://efitekblog.blogspot.com/2025/08/essential-seo-tips-for-2025-stay-ahead.html" target="_blank" rel="noopener">
+        <div class="post-img"><img src="/assets/img/blog-seo.webp" alt="Illustration of SEO analytics and search rankings" width="800" height="800" loading="lazy" decoding="async"></div>
+        <div class="post-body"><div class="post-meta"><span class="tag">SEO</span></div>
+        <h3>Essential SEO Tips to Stay Ahead</h3><p>Practical, proven steps to help your website rank higher on Google and attract more qualified visitors.</p>
+        <span class="link-arrow">Read article <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></span></div></a>
+      <a class="post reveal" data-delay="3" href="/voice-chatbot-app.html" target="_blank" rel="noopener">
+        <div class="post-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=78" srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=480&q=78 480w, https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=78 800w" sizes="(max-width: 900px) 100vw, 50vw" alt="Analytics dashboard on a laptop" loading="lazy" decoding="async" data-fallback="/assets/img/dev-coding.webp"></div>
+        <div class="post-body"><div class="post-meta"><span class="tag">Try it</span></div>
+        <h3>Meet the E-Fitek AI Voice Assistant</h3><p>Ask questions by voice, text or image and get instant answers about our services — any time of day.</p>
+        <span class="link-arrow">Launch assistant <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></span></div></a>
+    </div>
+  </div>
+</section>
 
-        <section id="about" class="card fade-in text-white">
-            <h3>About Us</h3>
-            <p>We are a team of passionate developers, designers, and digital strategists committed to turning your
-                ideas into reality. Our expertise spans across software development, web hosting, and providing
-                comprehensive training to empower you and your team.</p>
-        </section>        
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2 class="h-1">Questions, answered.</h2></div>
+    <div class="faq"><details class="reveal"><summary>How much does a website cost?<svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron-down"></use></svg></summary><div class="answer"><p>It depends on scope — a focused business website costs far less than a custom e-commerce platform. Tell us what you need and we'll send a clear, fixed quote within one business day.</p></div></details><details class="reveal"><summary>Do you work with businesses outside Nigeria?<svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron-down"></use></svg></summary><div class="answer"><p>Yes. We work remotely with clients across Africa, the UK, the US and beyond, using video calls, shared project boards and WhatsApp for quick updates.</p></div></details><details class="reveal"><summary>Will my website be mobile-friendly and SEO-ready?<svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron-down"></use></svg></summary><div class="answer"><p>Always. Every site we build is mobile-first, fast-loading and structured for search engines, with analytics set up from day one.</p></div></details><details class="reveal"><summary>Can you manage my marketing after launch?<svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron-down"></use></svg></summary><div class="answer"><p>Yes. Many clients keep us on for SEO, ads, social media and email so there's one team accountable for growth.</p></div></details><details class="reveal"><summary>How do we get started?<svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron-down"></use></svg></summary><div class="answer"><p>Book a free consultation or send us a WhatsApp message. We'll learn about your goals, recommend an approach and send a proposal — no obligation.</p></div></details></div>
+  </div>
+</section>
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div><h2>Ready to grow online?</h2><p>Tell us about your business and goals. We'll reply within one business day with ideas and a clear, no-obligation proposal.</p></div>
+      <div class="actions">
+        <a class="btn btn-primary" href="/contact">Book a free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a>
+        <a class="btn btn-ghost" href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </main>
-
-    <footer class="bg-gray-50">
-        <p class="text-blue" target="_blank">Contact us:</p>
-        <p><a href="tel:+2348167712361" target="_blank"><i class="fas fa-phone-alt text-blue"></i></a></p>
-        <p><a href="mailto:kingsleyokedigwe@gmail.com" target="_blank"><i class="fas fa-envelope text-blue"></i></a></p>
-        <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp text-blue" ></i></a></p>
-
-        <div class="social-links">
-            <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f text-blue"></i></a>
-            <a href=" https://www.linkedin.com/company/efitekk/" ><i
-                    class="fab fa-linkedin text-blue"></i></a>
-            <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube text-blue"></i></a>
-            <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram text-blue" ></i></a>
-            <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter text-blue" ></i></a>
-        </div>
-        <p class="text-blue">&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
-    </footer>
-
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-
-    <button id="backToTopBtn" title="Go to top">^</button>
-
-    <script>
-        const words = ["designing", "helping", "conversion", "learning", "writing", "Facebook"];
-        const dynamicTextSpan = document.getElementById('dynamic-words');
-        let wordIndex = 0;
-
-        function animateText() {
-            const currentWord = words[wordIndex];
-
-            dynamicTextSpan.textContent = currentWord;
-
-            dynamicTextSpan.classList.add('fade-in');
-            dynamicTextSpan.classList.remove('fade-out');
-
-            setTimeout(() => {
-                dynamicTextSpan.classList.remove('fade-in');
-                dynamicTextSpan.classList.add('fade-out');
-
-                setTimeout(() => {
-                    wordIndex = (wordIndex + 1) % words.length;
-                    animateText();
-                }, 500);
-            }, 2000);
-        }
-
-        animateText();
-    </script>
-
-    <script src="script.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="/"><img src="/assets/img/logo-mark-light.png" alt="" width="141" height="156"><span class="brand-name">E-FITEK<small>DIGITAL SERVICES</small></span></a>
+        <p>A Nigerian digital studio building websites, software and marketing engines that help ambitious businesses grow online.</p>
+        <div class="socials"><a href="https://web.facebook.com/efitekk" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-facebook"></use></svg></a><a href="https://www.linkedin.com/company/efitekk/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-linkedin"></use></svg></a><a href="https://www.instagram.com/e_fitek/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-instagram"></use></svg></a><a href="https://www.youtube.com/@e-fitekk" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-youtube"></use></svg></a><a href="https://x.com/e_fitek" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-twitter"></use></svg></a></div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="/services#web-design">Web Design & Development</a></li><li><a href="/services#software">Custom Software & SAP Integration</a></li><li><a href="/services#seo">Search Engine Optimisation</a></li><li><a href="/services#ppc">Paid Ads (PPC)</a></li><li><a href="/services#email-sms">Email & SMS Marketing</a></li><li><a href="/services#social-media">Social Media Management</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/about">About us</a></li><li><a href="/about#team">Our team</a></li>
+        <li><a href="https://efitekblog.blogspot.com" target="_blank" rel="noopener">Insights &amp; blog</a></li>
+        <li><a href="/contact">Contact</a></li><li><a href="/voice-chatbot-app.html">AI voice assistant</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul class="footer-contact">
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-phone"></use></svg><a href="tel:+2348167712361">+234 816 771 2361</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg><a href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg><a href="mailto:kingsleyokedigwe@gmail.com">kingsleyokedigwe@gmail.com</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-clock"></use></svg><span>Mon – Fri, 8am – 6pm WAT</span></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> E-Fitek Digital Services. All rights reserved.</span>
+      <span>Designed &amp; built in Nigeria for the world.</span>
+    </div>
+    <div class="footer-word" aria-hidden="true">E-FITEK</div>
+  </div>
+</footer>
+<div class="fab-stack">
+  <button class="fab fab-top" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></button>
+  <a class="fab fab-voice" href="/voice-chatbot-app.html" target="_blank" rel="noopener" aria-label="Talk to our AI voice assistant"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mic"></use></svg><span>Ask our AI</span></a>
+  <a class="fab fab-wa" href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg><span>WhatsApp us</span></a>
+</div>
+<script src="/assets/js/main.js?v=2" defer></script>
 </body>
-
 </html>

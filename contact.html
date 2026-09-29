@@ -1,160 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-NG" class="no-js">
 <head>
-  <style>
-    .async-hide {
-      opacity: 0 !important
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact E-Fitek | Free Website & Marketing Consultation</title>
+<meta name="description" content="Talk to E-Fitek about your website, software or marketing project. Call or WhatsApp +234 816 771 2361, email us, or send the form for a free, no-obligation proposal.">
+<link rel="canonical" href="https://e-fitek.vercel.app/contact">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#060a1f">
 
-    /* Custom styles for the fixed chat button */
-    .fixed-chat-button {
-      position: fixed;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1000;
-      background-color: rgba(200, 200, 200, 0.9);
-      /* Translucent grey */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-      /* or use your preferred value */
-      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-      writing-mode: vertical-lr;
-      text-decoration: none;
-      text-orientation: mixed;
-      white-space: nowrap;
-    }
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="E-Fitek Digital Services">
+<meta property="og:title" content="Contact E-Fitek | Free Website & Marketing Consultation">
+<meta property="og:description" content="Talk to E-Fitek about your website, software or marketing project. Call or WhatsApp +234 816 771 2361, email us, or send the form for a free, no-obligation proposal.">
+<meta property="og:url" content="https://e-fitek.vercel.app/contact">
+<meta property="og:image" content="https://e-fitek.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@e_fitek">
+<meta name="twitter:title" content="Contact E-Fitek | Free Website & Marketing Consultation">
+<meta name="twitter:description" content="Talk to E-Fitek about your website, software or marketing project. Call or WhatsApp +234 816 771 2361, email us, or send the form for a free, no-obligation proposal.">
+<meta name="twitter:image" content="https://e-fitek.vercel.app/og-image.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="/assets/css/main.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://e-fitek.vercel.app/#organization", "name": "E-Fitek Digital Services", "alternateName": "E-Fitek", "url": "https://e-fitek.vercel.app/", "logo": "https://e-fitek.vercel.app/icon-512.png", "image": "https://e-fitek.vercel.app/og-image.jpg", "description": "Web design, software development, SEO, paid ads, email & SMS and social media marketing for growing businesses.", "telephone": "+2348167712361", "email": "kingsleyokedigwe@gmail.com", "address": {"@type": "PostalAddress", "addressCountry": "NG"}, "areaServed": ["Nigeria", "Africa", "Worldwide"], "priceRange": "₦₦", "sameAs": ["https://web.facebook.com/efitekk", "https://www.linkedin.com/company/efitekk/", "https://www.instagram.com/e_fitek/", "https://www.youtube.com/@e-fitekk", "https://x.com/e_fitek"], "knowsAbout": ["Web design", "Search engine optimisation", "Pay-per-click advertising", "Social media marketing", "Email marketing", "SAP BTP", "SAP Integration Suite"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://e-fitek.vercel.app/#website", "url": "https://e-fitek.vercel.app/", "name": "E-Fitek Digital Services", "publisher": {"@id": "https://e-fitek.vercel.app/#organization"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://e-fitek.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://e-fitek.vercel.app/contact"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ContactPage", "url": "https://e-fitek.vercel.app/contact", "about": {"@id": "https://e-fitek.vercel.app/#organization"}}</script>
 
-    .fixed-chat-button:hover {
-      background-color: rgba(235, 235, 235, 0.95);
-      /* Slightly darker translucent grey on hover */
-      transform: scale(1.05) translateY(-50%);
-      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .text-black {
-      color: black;
-    }
-
-    .rounded-full {
-      border-radius: 9999px;
-    }
-
-    .focus\:ring-opacity-50 {
-      --tw-ring-opacity: 0.5;
-      --tw-ring-color: rgb(59 130 246);
-      box-shadow: 0 0 0 3px var(--tw-ring-color / var(--tw-ring-opacity));
-    }
-
-    .fixed-chat-button:active {
-      transform: scale(0.95) translateY(-50%);
-    }
-
-        
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="E-Fitek Digital Services offers innovative digital solutions for businesses.">
-  <meta name="keywords" content="software development, web hosting, digital training, E-Fitek, digital services">
-  <meta name="author" content="E-Fitek Digital Services">
-  <link rel="canonical" href="https://efitekk.vercel.app/">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://efitekk.vercel.app/apple-touch-icon.png">
-  <title>E-Fitek Digital Services - Digital Solutions</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="https://efitekk.vercel.app/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-
 <body>
-  <!-- <video class="watermark-video" src="watermarkvid2.mp4" autoplay muted loop></video> -->
-  <div class="watermark-container">
-        <img class="watermark-image" src="bg3.png" alt="Watermark image">
-    </div>
-  <a href="launch-chatbot-page.html"
-    class="fixed-chat-button text-blue font-semibold rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-    Launch Voice Chatbot
-  </a>
-
-  <header class="bg-gray-50">
-    <nav class="main-nav">
-      <div class="logo">
-        <a href="index.html">
-          <img src="logo.png" alt="E-Fitek Digital Services Logo" class="logo-img" loading="lazy">
-        </a>
-      </div>
-      <button class="menu-toggle" aria-label="Toggle navigation menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="text-black">Home</a></li>
-        <li><a href="about.html" class="text-black">About</a></li>
-        <li><a href="services.html" class="text-black">Services</a></li>
-        <li><a href="contact.html" class="text-black">Contact</a></li>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="E-Fitek Digital Services — home">
+      <img src="/assets/img/logo-mark-light.png" alt="" width="141" height="156">
+      <span class="brand-name">E-FITEK<small>DIGITAL SERVICES</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links"><li><a href="/">Home</a></li><li><a href="/services">Services</a></li><li><a href="/about">About</a></li><li><a href="https://efitekblog.blogspot.com" target="_blank" rel="noopener">Insights</a></li><li><a href="/contact" aria-current="page">Contact</a></li>
+        <li class="mobile-cta"><a class="btn btn-primary" href="/contact">Book a free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a></li>
       </ul>
     </nav>
-  </header>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="/contact">Free consultation <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon i-open" aria-hidden="true"><use href="/assets/icons.svg#i-menu"></use></svg><svg class="icon i-close" aria-hidden="true"><use href="/assets/icons.svg#i-x"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main"><section class="page-hero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+    <span class="eyebrow">Contact</span>
+    <h1>Let's talk about your <span class="grad-text">next move.</span></h1>
+    <p class="lead">Tell us what you're building or where you want to grow. We reply within one business day — usually much sooner on WhatsApp.</p>
+  </div>
+</section>
 
-  <main>
-    <section id="contact-form">
-      <h2>Get in Touch</h2>
-      <p>
-        Have a project in mind or a question for us? We'd love to hear from
-        you. Please fill out the form below, and we'll get back to you as soon
-        as possible.
-      </p>
-
-      <form action="https://formspree.io/f/xanbkdez" method="POST" class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <button type="submit" class="cta-button">Send Message</button>
+<section class="section">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Reach us directly</span>
+      <h2 class="h-2" style="font-size:clamp(26px,3vw,34px)">Prefer to talk? We're one tap away.</h2>
+      <p style="color:var(--text-2);margin-bottom:28px">Book a free 30-minute consultation. We'll discuss your goals, give honest advice and outline the best next steps — whether or not you work with us.</p>
+      <div class="contact-cards">
+        <a class="contact-card wa" href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg></span><span><small>WhatsApp · fastest</small><b>+234 816 771 2361</b></span><svg class="icon go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+        <a class="contact-card" href="tel:+2348167712361"><span class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-phone"></use></svg></span><span><small>Call us</small><b>+234 816 771 2361</b></span><svg class="icon go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+        <a class="contact-card" href="mailto:kingsleyokedigwe@gmail.com"><span class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg></span><span><small>Email</small><b>kingsleyokedigwe@gmail.com</b></span><svg class="icon go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up-right"></use></svg></a>
+        <div class="contact-card"><span class="ic"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-clock"></use></svg></span><span><small>Hours</small><b>Mon – Fri, 8am – 6pm WAT</b></span></div>
+      </div>
+      <ul class="checklist" style="margin-top:34px">
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Free, no-obligation proposal</b><span>Clear scope, timeline and fixed price.</span></div></li>
+        <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check"></use></svg></span><div><b>Your information stays private</b><span>We never share or sell your details.</span></div></li>
+      </ul>
+    </div>
+    <div class="form-card reveal" data-delay="1" id="contact-form">
+      <h2>Tell us about your project</h2>
+      <p style="color:var(--text-2)">Fill in a few details and we'll come back with ideas and a proposal.</p>
+      <form id="contact-form-el" action="https://formspree.io/f/xanbkdez" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry from e-fitek website">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-grid">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="phone">Phone / WhatsApp <span class="opt">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="company">Company <span class="opt">(optional)</span></label><input id="company" name="company" autocomplete="organization"></div>
+          <div class="field full"><label>What do you need help with?</label><div class="chips"><label><input type="checkbox" name="services" value="web-design"><span>Web Design & Development</span></label><label><input type="checkbox" name="services" value="software"><span>Custom Software & SAP Integration</span></label><label><input type="checkbox" name="services" value="seo"><span>Search Engine Optimisation</span></label><label><input type="checkbox" name="services" value="ppc"><span>Paid Ads (PPC)</span></label><label><input type="checkbox" name="services" value="email-sms"><span>Email & SMS Marketing</span></label><label><input type="checkbox" name="services" value="social-media"><span>Social Media Management</span></label><label><input type="checkbox" name="services" value="hosting"><span>Web Hosting & Care Plans</span></label><label><input type="checkbox" name="services" value="training"><span>Digital Skills Training</span></label></div></div>
+          <div class="field full"><label for="budget">Estimated budget <span class="opt">(optional)</span></label>
+            <select id="budget" name="budget"><option value="">Select a range</option><option>Under ₦500k</option><option>₦500k – ₦1.5m</option><option>₦1.5m – ₦5m</option><option>₦5m+</option><option>Not sure yet</option></select></div>
+          <div class="field full"><label for="message">Project details</label><textarea id="message" name="message" required placeholder="What are you looking to achieve? Any deadlines or examples you like?"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:22px">Send message <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-send"></use></svg></button>
+        <p class="form-note">By sending this form you agree to be contacted about your enquiry.</p>
+        <div class="form-status" role="status" aria-live="polite"></div>
       </form>
-    </section>
-  </main>
-
-  <footer class="bg-gray-50">
-    <p class="text-blue" target="_blank">Contact us:</p>
-    <p><a href="tel:+2348167712361" target="_blank"><i class="fas fa-phone-alt text-blue"></i></a></p>
-    <p><a href="mailto:kingsleyokedigwe@gmail.com" target="_blank"><i class="fas fa-envelope text-blue"></i></a></p>
-    <p><a href="https://wa.me/2348167712361" target="_blank"><i class="fab fa-whatsapp text-blue"></i></a></p>
-
-    <div class="social-links">
-      <a href="https://web.facebook.com/efitekk" target="_blank"><i class="fab fa-facebook-f text-blue"></i></a>
-      <a href=" https://www.linkedin.com/company/efitekk/"><i class="fab fa-linkedin text-blue"></i></a>
-      <a href="https://www.youtube.com/@e-fitekk" target="_blank"><i class="fab fa-youtube text-blue"></i></a>
-      <a href="https://www.instagram.com/e_fitek/" target="_blank"><i class="fab fa-instagram text-blue"></i></a>
-      <a href="https://x.com/e_fitek" target="_blank"><i class="fab fa-twitter text-blue"></i></a>
     </div>
-
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="/"><img src="/assets/img/logo-mark-light.png" alt="" width="141" height="156"><span class="brand-name">E-FITEK<small>DIGITAL SERVICES</small></span></a>
+        <p>A Nigerian digital studio building websites, software and marketing engines that help ambitious businesses grow online.</p>
+        <div class="socials"><a href="https://web.facebook.com/efitekk" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-facebook"></use></svg></a><a href="https://www.linkedin.com/company/efitekk/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-linkedin"></use></svg></a><a href="https://www.instagram.com/e_fitek/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-instagram"></use></svg></a><a href="https://www.youtube.com/@e-fitekk" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-youtube"></use></svg></a><a href="https://x.com/e_fitek" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-twitter"></use></svg></a></div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="/services#web-design">Web Design & Development</a></li><li><a href="/services#software">Custom Software & SAP Integration</a></li><li><a href="/services#seo">Search Engine Optimisation</a></li><li><a href="/services#ppc">Paid Ads (PPC)</a></li><li><a href="/services#email-sms">Email & SMS Marketing</a></li><li><a href="/services#social-media">Social Media Management</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/about">About us</a></li><li><a href="/about#team">Our team</a></li>
+        <li><a href="https://efitekblog.blogspot.com" target="_blank" rel="noopener">Insights &amp; blog</a></li>
+        <li><a href="/contact">Contact</a></li><li><a href="/voice-chatbot-app.html">AI voice assistant</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul class="footer-contact">
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-phone"></use></svg><a href="tel:+2348167712361">+234 816 771 2361</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg><a href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg><a href="mailto:kingsleyokedigwe@gmail.com">kingsleyokedigwe@gmail.com</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-clock"></use></svg><span>Mon – Fri, 8am – 6pm WAT</span></li></ul></div>
     </div>
-    <p class="text-blue">&copy; 2025 E-fitek Digital Services. All rights reserved.</p>
-  </footer>
-
-  
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = "https://embed.tawk.to/689e6323ea06af19271e3e5b/1j2lb6hid";
-      s1.charset = "UTF-8";
-      s1.setAttribute("crossorigin", "*");
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
-  <button id="backToTopBtn" title="Go to top">^</button>
-  <script src="script.js"></script>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> E-Fitek Digital Services. All rights reserved.</span>
+      <span>Designed &amp; built in Nigeria for the world.</span>
+    </div>
+    <div class="footer-word" aria-hidden="true">E-FITEK</div>
+  </div>
+</footer>
+<div class="fab-stack">
+  <button class="fab fab-top" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></button>
+  <a class="fab fab-voice" href="/voice-chatbot-app.html" target="_blank" rel="noopener" aria-label="Talk to our AI voice assistant"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mic"></use></svg><span>Ask our AI</span></a>
+  <a class="fab fab-wa" href="https://wa.me/2348167712361?text=Hi%20E-Fitek%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-message-circle"></use></svg><span>WhatsApp us</span></a>
+</div>
+<script src="/assets/js/main.js?v=2" defer></script>
 </body>
-
 </html>

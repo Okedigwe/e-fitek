@@ -1,0 +1,73 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/team",
+      "destination": "/about#team",
+      "permanent": true
+    },
+    {
+      "source": "/team.html",
+      "destination": "/about#team",
+      "permanent": true
+    },
+    {
+      "source": "/launch-chatbot-page",
+      "destination": "/voice-chatbot-app.html",
+      "permanent": true
+    },
+    {
+      "source": "/launch-chatbot-page.html",
+      "destination": "/voice-chatbot-app.html",
+      "permanent": true
+    },
+    {
+      "source": "/voice-chatbot",
+      "destination": "/voice-chatbot-app.html",
+      "permanent": true
+    },
+    {
+      "source": "/voice-chatbot.html",
+      "destination": "/voice-chatbot-app.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), geolocation=(), microphone=(self)"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/gemini.js": {
+      "maxDuration": 30
+    }
+  }
+}

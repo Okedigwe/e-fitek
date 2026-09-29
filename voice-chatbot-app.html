@@ -264,8 +264,8 @@
 
         // --- LLM API Call for Text Generation with Image Understanding ---
         async function getGeminiResponse(prompt, imageBase64) {
-            const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent';
-            const apiKey = 'AIzaSyAHZodiFVO-P_OZng2HLa-aRPKz2-WanK4'; // PASTE YOUR API KEY HERE
+            // Key is kept server-side in the Vercel function /api/gemini (env var GEMINI_API_KEY)
+            const MODEL = 'gemini-2.5-flash';
 
             // Construct the payload parts based on whether an image is provided
             let parts = [];
@@ -290,10 +290,11 @@
             chatHistory.push({ role: "user", parts: parts });
 
             const payload = {
-                contents: chatHistory
+                contents: chatHistory,
+                systemInstruction: { parts: [{ text: "You are the friendly AI assistant for E-Fitek Digital Services, a Nigerian digital agency offering web design & development, custom software and SAP BTP/Integration Suite work, SEO, paid ads (Google/Meta), email & SMS marketing, social media management, web hosting and digital skills training. Answer concisely and helpfully. When a visitor shows interest in a project, invite them to book a free consultation at /contact or WhatsApp +234 816 771 2361." }] }
             };
             
-            console.log('Sending API request with payload:', payload);
+            
 
             // Disable buttons and show loading indicator
             sendButton.disabled = true;
@@ -303,10 +304,10 @@
             const botMessagePlaceholder = chatMessages.lastElementChild;
 
             try {
-                const response = await fetch(`${apiUrl}?key=${apiKey}`, {
+                const response = await fetch('/api/gemini', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify({ model: MODEL, payload })
                 });
                 
                 console.log('API response status:', response.status, response.statusText);
@@ -347,8 +348,7 @@
         // --- TTS API Call for Speech Generation ---
         async function speakResponse(text) {
             speakButton.disabled = true;
-            const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent';
-            const apiKey = 'YOUR_API_KEY_HERE'; // PASTE YOUR API KEY HERE
+            const MODEL = 'gemini-2.5-flash-preview-tts';
             
             // Function to convert base64 to ArrayBuffer
             function base64ToArrayBuffer(base64) {
@@ -423,13 +423,12 @@
                             }
                         }
                     },
-                    model: "gemini-2.5-flash-preview-tts"
-                };
+                                    };
 
-                const response = await fetch(`${apiUrl}?key=${apiKey}`, {
+                const response = await fetch('/api/gemini', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify({ model: MODEL, payload })
                 });
                 
                 if (!response.ok) {
